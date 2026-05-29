@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch01 Section 02-2 기업 내부정보 파악 — 마케팅·영업·공급관리</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="site-logo">경영정보<span>시각화능력</span></a>
+    <div class="header-divider"></div>
+    <span class="header-breadcrumb">Ch01 경영정보 일반 &rsaquo; Section 02 기업 내부정보 파악 &rsaquo; 마케팅·영업·공급관리</span>
+  </div>
+</header>
+
+<div class="section-hero">
+  <div class="section-hero-inner">
+    <div class="chapter-tag">Chapter 01 · Section 02-2</div>
+    <h1>기업 내부정보 파악</h1>
+    <p class="section-subtitle">마케팅·영업 기본정보 / 공급관리(생산운영관리) 기본정보</p>
+  </div>
+</div>
+
+<div class="page-wrap">
+
+  <nav class="nav-buttons">
+    <a href="index.html" class="btn btn-home">&#8962; 목차</a>
+    <a href="ch01_s02_1.html" class="btn">&lsaquo; Section 02-1</a>
+    <span class="nav-spacer"></span>
+    <a href="ch01_s03.html" class="btn btn-primary">Section 03 &rsaquo;</a>
+  </nav>
+
+  <!-- 트리형 목차 -->
+  <div class="toc-box">
+    <h2>이 섹션의 목차</h2>
+    <ul class="toc-tree">
+      <li class="toc-h1"><a href="#s2">2. 마케팅·영업 기본정보</a>
+        <ul>
+          <li class="toc-h2"><a href="#s2-1">1) 마케팅 목표 및 계획 수립</a>
+            <ul>
+              <li class="toc-h3"><a href="#s2-1">시장점유율 / 매출목표 / 시장규모 / 성장률</a></li>
+              <li class="toc-h3"><a href="#s2-1">제품 라인업 / 경쟁사 재무정보 / 제품정보</a></li>
+              <li class="toc-h3"><a href="#s2-1">마케팅 예산 / 유통경로별 예상비용 및 예상수익</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s2-2">2) 판매 및 수익</a>
+            <ul>
+              <li class="toc-h3"><a href="#s2-2">투자수익률(ROI) / 매출액 / 순이익 / 매출원가</a></li>
+              <li class="toc-h3"><a href="#s2-2">제품·서비스 판매량 / 판매지역</a></li>
+              <li class="toc-h3"><a href="#s2-2">가격 및 할인 정보 (할인율 / 판매 프로모션 정보)</a></li>
+              <li class="toc-h3"><a href="#s2-2">광고 투자 대비 수익률(ROAS)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s2-3">3) 판매 및 영업</a>
+            <ul>
+              <li class="toc-h3"><a href="#s2-3">신규고객판매 / 기존 고객에 의한 판매 / 반품된 상품 수</a></li>
+              <li class="toc-h3"><a href="#s2-3">온·오프라인 매장 판매 수 / 재고회전율 / 평균주문액</a></li>
+              <li class="toc-h3"><a href="#s2-3">재구매율 / 업셀링(Upselling) / 크로스셀링(Cross selling)</a></li>
+              <li class="toc-h3"><a href="#s2-3">판매팀 성과 정보 / 상품 판매 수 / 대금회수율</a></li>
+              <li class="toc-h3"><a href="#s2-3">고객단가 / 해약건수 / 고객불만 수 / 상담 수 / 수주 수</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s2-4">4) 고객</a>
+            <ul>
+              <li class="toc-h3"><a href="#s2-4">순수고객추천지수(NPS) / 고객생애가치(LTV) / 고객유지율(CRR)</a></li>
+              <li class="toc-h3"><a href="#s2-4">고객성향 / 고객욕구 / 구매패턴 / 고객만족도 / 고객 행동 데이터</a></li>
+              <li class="toc-h3"><a href="#s2-4">고객 세그먼트 / 잠재고객 / 월간 활성 사용자(MAU)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s2-5">5) 고객관계관리(CRM)</a>
+            <ul>
+              <li class="toc-h3"><a href="#s2-5a">(1) 고객 정보 및 관련 데이터</a></li>
+              <li class="toc-h3"><a href="#s2-5b">(2) 구매 이력 관련 데이터</a></li>
+              <li class="toc-h3"><a href="#s2-5c">(3) 서비스 요청 이력 관련 데이터</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s2-6">6) 전자상거래(E-Commerce)</a>
+            <ul>
+              <li class="toc-h3"><a href="#s2-6">접속·트래픽 : 웹사이트 접속자 수 / 모바일 기기 접속자 수 / 자연검색량</a></li>
+              <li class="toc-h3"><a href="#s2-6">광고 성과 : 노출도(Impression) / 클릭률(CTR) / 전환율(CVR) / 이탈률</a></li>
+              <li class="toc-h3"><a href="#s2-6">광고 비용 : CPC / CPM / CPI / CPA</a></li>
+              <li class="toc-h3"><a href="#s2-6">기타 : 콘텐츠 반응률 / SNS 방문자 증가율·ROI / 고착도(Stickiness) / 다운로드 수 / 팔로워 수 / 리드(Lead) / 장바구니 제품 수</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="toc-h1"><a href="#s3">3. 공급관리(생산운영관리) 기본정보</a>
+        <ul>
+          <li class="toc-h2"><a href="#s3-1">1) 생산시스템의 효율성 분석</a>
+            <ul>
+              <li class="toc-h3"><a href="#s3-1">투입 데이터 / 산출 데이터 (병원 / 공장 / 대학 / 국가 / 음식점)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s3-2">2) 수요예측</a>
+            <ul>
+              <li class="toc-h3"><a href="#s3-2">수요예측의 개념</a></li>
+              <li class="toc-h3"><a href="#s3-2">시간적 범위 (단기 / 장기)</a></li>
+              <li class="toc-h3"><a href="#s3-2">수요 변화 유형 (수평적 / 추세적 / 계절적 / 순환적 / 무작위)</a></li>
+              <li class="toc-h3"><a href="#s3-2">수요예측 방법 (MAD / MAPE / MSE)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s3-3">3) 품질관리</a>
+            <ul>
+              <li class="toc-h3"><a href="#s3-3">품질관리(Quality Control) 개념</a></li>
+              <li class="toc-h3"><a href="#s3-3">품질검사 (생산 전·중·후 / 검사 시 고려사항)</a></li>
+              <li class="toc-h3"><a href="#s3-3">6가지 품질 기법 (체크리스트 / 히스토그램 / 산점도 / 그래프 / 파레토 / SERVQUAL)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s3-4">4) 공급사슬관리(SCM)</a>
+            <ul>
+              <li class="toc-h3"><a href="#s3-4">SCM 개념</a></li>
+              <li class="toc-h3"><a href="#s3-4">공급사슬의 이동 유형 (물리적 이동 / 현금흐름 / 정보 교환)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s3-5">5) 구매관리</a>
+            <ul>
+              <li class="toc-h3"><a href="#s3-5">구매부서의 역할</a></li>
+              <li class="toc-h3"><a href="#s3-5">구매관리활동 (구매주기)</a></li>
+              <li class="toc-h3"><a href="#s3-5">구매 유형 (중앙집중구매 / 분산구매)</a></li>
+              <li class="toc-h3"><a href="#s3-5">구매관리와 데이터 (트래픽관리 / 시스템 추적)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s3-6">6) 황소채찍효과(Bullwhip Effect)</a>
+            <ul>
+              <li class="toc-h3"><a href="#s3-6">개념</a></li>
+              <li class="toc-h3"><a href="#s3-6">영향 (재고흐름속도 / 병목현상)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s3-7">7) 재고와 경제적 주문량 모형</a>
+            <ul>
+              <li class="toc-h3"><a href="#s3-7">재고관리 (재고회전율 / 재고공급일수 / 리드타임 / 비용 유형)</a></li>
+              <li class="toc-h3"><a href="#s3-7">경제적 주문량(EOQ) 모형</a></li>
+              <li class="toc-h3"><a href="#s3-7">재고 모형 (정량발주모형(Q-Model) / 정기발주모형(P-Model))</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s3-8">8) PERT/CPM과 프로젝트 관리</a>
+            <ul>
+              <li class="toc-h3"><a href="#s3-8">PERT / CPM 개념</a></li>
+              <li class="toc-h3"><a href="#s3-8">PERT/CPM 이점</a></li>
+              <li class="toc-h3"><a href="#s3-8">네트워크도 (AOA / AON)</a></li>
+              <li class="toc-h3"><a href="#s3-8">계산 알고리즘 (ES / EF / LS / LF)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="toc-h1"><a href="#keywords">✅ 핵심 키워드</a></li>
+    </ul>
+  </div>
+
+  <div class="content-area">
+
+    <!-- ===== 2. 마케팅·영업 기본정보 ===== -->
+    <h2 id="s2" class="anchor-target">2. 마케팅·영업 기본정보</h2>
+
+    <h3 id="s2-1" class="anchor-target">1) 마케팅 목표 및 계획 수립</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>개념</th><th>계산식</th><th>활용</th></tr></thead>
+        <tbody>
+          <tr><td>시장점유율</td><td>특정 기업이나 브랜드가 전체 시장에서 차지하는 비율</td><td>(특정 기업의 연간 매출) ÷ (전체 시장 규모) × 100(%)</td><td>기업 경쟁력·성과 평가, 시장 내 위치 파악, 신규 시장 진입 전략 수립</td></tr>
+          <tr><td>매출목표</td><td>기업이 특정 기간 동안 달성하고자 하는 경영목표</td><td>수치("월별 매출 10억") 또는 비율("분기별 10% 증가") 형태로 설정</td><td>전략 수립, 예산 할당, 성과 평가</td></tr>
+          <tr><td>시장규모</td><td>특정 산업 또는 제품/서비스 카테고리에서 전체 시장의 규모</td><td>총매출 또는 총소비량 등으로 표현</td><td>시장 기회 파악, 사업계획 수립</td></tr>
+          <tr><td>성장률</td><td>특정 기간 동안 시장이나 기업의 규모가 얼마나 증가했는지를 백분율로 표현</td><td>{(A시점 규모) − (비교시점 규모)} ÷ (비교시점 규모) × 100(%)</td><td>성장 속도·경쟁력 평가, 향후 성장 가능성 예측</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>제품 라인업(line-up)</h4>
+    <ul>
+      <li>기업이 제공하는 제품의 다양성과 다양한 제품들의 구성</li>
+      <li>다양한 고객 요구에 대응하고 시장의 다양한 세그먼트(segment)를 타겟팅</li>
+      <li>고객의 선택 폭을 넓히고 매출 다각화와 시장점유율 증가 도모</li>
+    </ul>
+
+    <h4>경쟁사의 재무정보</h4>
+    <p>경쟁사의 재무보고서를 분석하여 경쟁사의 재무성과를 평가하고 기업의 경쟁력과 비교 분석 가능</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>재무제표</th><th>파악 가능한 정보</th></tr></thead>
+        <tbody>
+          <tr><td>손익계산서</td><td>매출·비용·이익 등</td></tr>
+          <tr><td>재무상태표</td><td>자산·부채·지급능력 등</td></tr>
+          <tr><td>현금흐름표</td><td>현금 유입과 유출, 주주에게 배당되는 현금 흐름</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>제품정보</h4>
+    <ul>
+      <li>제품의 특징·사용법·취급주의 사항을 포함한 제품에 관한 정보</li>
+      <li>제품의 기능·사양·재료·사용 방법·유지 보수·보증 조건 등 포함</li>
+      <li>마케팅 자료·제품 카탈로그·웹사이트 등을 통해 제공되며 브랜드 이미지와 고객 만족도에 영향</li>
+    </ul>
+
+    <h4>마케팅 예산</h4>
+    <ul>
+      <li>기업이 마케팅 활동을 수행하기 위해 투자하는 금액</li>
+      <li>광고·프로모션·마케팅 캠페인·디지털 마케팅 등에 사용</li>
+      <li>기업의 목표·시장 조건·경쟁 상황 등을 고려하여 적절하게 배분</li>
+    </ul>
+
+    <h4>유통경로별 예상비용 및 예상수익</h4>
+    <ul>
+      <li>유통경로 : 제조업자 → 도매상 → 소매상 → 소비자로 이어지는 수직적 연계</li>
+      <li>유통경로(채널)에 할당할 비용 계획에 필요</li>
+      <li>과거 데이터·캠페인 분석 결과·경험적 지표 등을 활용하여 평가</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <h3 id="s2-2" class="anchor-target">2) 판매 및 수익</h3>
+
+    <div class="table-wrap">
+      <table class="table-col-4-wide-concept">
+        <colgroup>
+          <col class="c-label"><col class="c-concept"><col class="c-formula"><col class="c-use">
+        </colgroup>
+        <thead><tr><th>지표</th><th>개념</th><th>계산식</th><th>활용</th></tr></thead>
+        <tbody>
+          <tr><td>투자수익률(ROI, Return On Investment)</td><td>특정 투자 또는 마케팅 활동에 대한 수익과 비용 사이의 비율</td><td>{(수익) − (비용)} ÷ (비용) × 100(%)</td><td>투자 효과 측정·비교, 수익성 정량적 평가</td></tr>
+          <tr><td>매출액</td><td>기업이 제품 또는 서비스 판매로 얻는 총금액</td><td>(판매량) × (단가)</td><td>예산 편성·성과 분석·마케팅 전략 수립</td></tr>
+          <tr><td>순이익</td><td>기업이 수익에서 비용을 차감한 후 남는 순수한 이익</td><td>(수익) − (비용)</td><td>경영 성과·수익성 측정</td></tr>
+          <tr><td>매출원가</td><td>제품 또는 서비스를 생산하고 판매하기 위해 발생하는 모든 비용</td><td>원재료 구매·생산비·인건비·운송비·포장비 등 포함</td><td>제품 가격 책정, 수익 분석</td></tr>
+          <tr><td>제품·서비스 판매량</td><td>기업이 특정 기간 동안 판매한 제품 또는 서비스의 단위 수</td><td>—</td><td>수요·소비자 선호도 파악, 지속적 모니터링</td></tr>
+          <tr><td>판매지역</td><td>기업이 제품 또는 서비스를 판매하는 지리적·지역적 구분</td><td>—</td><td>특정 지역 수요 파악, 지역 중심 판매 전략 수립</td></tr>
+          <tr><td>광고 투자 대비 수익률(ROAS, Return On Advertising Spend)</td><td>광고 투자 대비 수익률을 나타내는 지표</td><td>{(매출) ÷ (광고투자비용)} × 100(%)</td><td>광고 캠페인 효율성 평가 (100 초과 = 수익 발생)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="quote-box quote-example"><strong>ROI 예시</strong> : 마케팅 캠페인에 10,000달러를 투자하여 50,000달러의 매출을 올린 경우 ROI = {(50,000 − 10,000) ÷ 10,000} × 100 = 400%</div>
+    <div class="quote-box quote-example"><strong>ROAS 예시</strong> : 특정 광고에 100만원을 투자하여 200만원의 매출이 발생했다면 ROAS = 200. ROAS가 100보다 크면 광고 투자에 대한 수익이 발생한 것이다.</div>
+
+    <h4>가격 및 할인 정보</h4>
+    <ul>
+      <li><strong>가격</strong> : 시장 수요·경쟁 상황·제품의 가치와 차별화 등을 고려하여 결정. 소비자 구매 결정에 큰 영향</li>
+      <li><strong>할인율</strong> : 제품이나 서비스의 정상 가격에 대한 할인 비율
+        <ul>
+          <li>계산식 : {(정상가격) − (할인가격)} ÷ (정상가격) × 100(%)</li>
+          <li>할인가격 = 정상가격 − (정상가격 × 할인율)</li>
+          <li>예 : 정상가격 10,000원, 할인율 20% → 할인가격 8,000원</li>
+        </ul>
+      </li>
+      <li><strong>판매 프로모션 정보</strong> : 판매 프로모션 활동의 기간·유형·할인율·참여 고객 수·구매량 등. 어떤 유형·시기의 프로모션이 효과적인지 파악에 활용</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <h3 id="s2-3" class="anchor-target">3) 판매 및 영업</h3>
+
+    <h4>고객 유입·판매 관련 지표</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>개념</th><th>활용</th></tr></thead>
+        <tbody>
+          <tr><td>신규고객판매</td><td>새로운 고객을 확보하여 제품·서비스를 판매한 수량</td><td>마케팅 캠페인 효율성 평가, 타겟팅 전략 조정</td></tr>
+          <tr><td>기존 고객에 의한 판매</td><td>기존 고객들이 추가 구매를 통해 기여한 판매량</td><td>고객 충성도·재구매율 측정</td></tr>
+          <tr><td>상품 판매 수</td><td>특정 기간 동안 판매된 상품의 수</td><td>상품 인기와 수요 파악, 마케팅 활동 성과 평가 및 판매 전략 최적화</td></tr>
+          <tr><td>온라인·오프라인 매장 판매 수</td><td>온라인(웹·앱) 및 오프라인(실제 매장) 각각의 판매 건수</td><td>매장 유형별 성과 비교, 채널 전략 최적화</td></tr>
+          <tr><td>수주 수</td><td>제품이나 서비스를 주문하거나 구매하는 고객의 수</td><td>제품 수요·판매 성과 파악, 마케팅 전략 조정</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>구매 행동·충성도 관련 지표</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>개념</th><th>계산식</th><th>활용</th></tr></thead>
+        <tbody>
+          <tr><td>평균주문액</td><td>고객 한 명이 평균적으로 주문 시 결제하는 금액</td><td>(매출액) ÷ (주문 건수)</td><td>고객 구매 행동·가치 이해, 가격 정책·판매 전략 개발</td></tr>
+          <tr><td>고객단가</td><td>매출액을 고객 수로 나누어 계산하는 지표</td><td>(매출액) ÷ (고객 수)</td><td>고객 가치 파악, 고단가 고객 세그먼트 타겟팅 전략 수립</td></tr>
+          <tr><td>재구매율</td><td>기존 구매 고객이 해당 제품을 다시 구매하는 비율</td><td>(재구매 건수) ÷ (이전 구매 고객 수) × 100(%)</td><td>고객 충성도 평가, 고객 유지 전략 수립</td></tr>
+          <tr><td>업셀링(Upselling) 비율</td><td>고객이 원래 의도한 것보다 더 비싼 상품이나 추가 상품을 구매하는 비율</td><td>(업셀링 구매 고객 수) ÷ (전체 고객 수) × 100(%)</td><td>고객 구매 행동 이해, 판매 전략 개발</td></tr>
+          <tr><td>크로스셀링(Cross selling) 비율</td><td>고객이 이미 구매한 상품과 관련된 다른 상품을 함께 구매하는 비율</td><td>(크로스셀링 구매 고객 수) ÷ (전체 고객 수) × 100(%)</td><td>매출 증가, 고객 구매 패턴 분석 및 추가 가치 유도</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="quote-box quote-example"><strong>재구매율 예시</strong> : 한 달 동안 이전에 구매한 100명의 고객 중 30명이 다시 구매했다면 재구매율 = 30%.</div>
+    <div class="quote-box quote-example"><strong>고객단가 예시</strong> : 한 기간 동안의 매출액이 10억원이고 고객 수가 10,000명이라면 고객단가 = 100,000원.</div>
+    <div class="quote-box quote-example"><strong>업셀링 비율 예시</strong> : 100명의 고객 중 20명이 원래 의도한 상품보다 더 비싼 상품이나 추가 상품을 구매했다면 업셀링 비율은 20%다.</div>
+    <div class="quote-box quote-example"><strong>크로스셀링 비율 예시</strong> : 100명의 고객 중 30명이 A 상품을 구매한 후 B 상품도 함께 구매했다면 크로스셀링 비율은 30%다.</div>
+    <div class="quote-box quote-example">업셀링과 크로스셀링의 차이 : 업셀링은 고객이 원래 보던 10만원짜리 노트북 대신 15만원짜리를 구매하도록 유도하는 것이고, 크로스셀링은 노트북을 산 고객에게 노트북 가방이나 마우스를 함께 구매하도록 유도하는 것이다.</div>
+
+    <h4>운영·관리 관련 지표</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>개념</th><th>계산식</th><th>활용</th></tr></thead>
+        <tbody>
+          <tr><td>반품된 상품 수</td><td>고객들이 구매한 상품을 반품하여 기업에 반환한 횟수</td><td>—</td><td>제품 품질 문제·고객 만족도 파악, 마케팅 전략 조정</td></tr>
+          <tr><td>재고회전율</td><td>일정 기간의 제품 판매량과 재고량의 비율</td><td>(판매량) ÷ (평균재고량)</td><td>판매채널 효율성 평가, 수요예측 및 재고관리 최적화</td></tr>
+          <tr><td>대금회수율</td><td>회사가 발행한 청구서나 판매 거래에서 고객으로부터 대금을 회수하는 비율</td><td>—</td><td>재무 건전성·운영 효율성 평가, 채권 관리 전략 개선</td></tr>
+          <tr><td>해약건수</td><td>특정 기간 동안의 해약된 계약 수</td><td>—</td><td>고객 이탈률 파악, 이탈 원인 분석 및 고객 유지 대책 마련</td></tr>
+          <tr><td>고객불만 수</td><td>특정 기간 동안 접수된 고객의 불만 사항 수</td><td>—</td><td>주요 불만 파악, 서비스 품질 개선</td></tr>
+          <tr><td>상담 수</td><td>고객과의 상담 또는 문의 수</td><td>—</td><td>고객 관심·참여도 파악, 제품·서비스 관심 수준 평가</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example"><strong>재고회전율 예시</strong> : 특정 제품의 한 해 판매량이 1,000개이고 평균재고량이 100개라면 재고회전율 = 10. 해당 제품이 한 해 동안 10번 회전(평균재고를 모두 소진)했음을 의미한다.</div>
+
+    <h4>판매팀 성과 정보</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>항목</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>개별 영업사원의 성과</td><td>판매량·매출액·신규고객 확보 등으로 측정. 역량 평가·보상·개별 영업 전략 성과 분석에 활용</td></tr>
+          <tr><td>팀별 목표 달성 여부</td><td>팀이 설정한 목표 대비 실제 달성 여부. 성과 평가·보상·개선 방향 결정에 활용</td></tr>
+          <tr><td>매출 성장률</td><td>특정 기간 동안 판매팀의 매출이 얼마나 성장했는지 백분율로 표현. 성과 동향 파악 및 비즈니스 전략 수립에 활용</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">영업사원 A가 한 달 동안 100개의 제품을 판매하여 매출액 1억원을 달성했다면 개별 성과는 판매량 100개와 매출액 1억원이다. 팀의 월 매출 목표가 1억원인데 실제 1억2천만원을 달성했다면 목표를 초과 달성한 것이고, 지난 분기 매출 10억원에서 현재 분기 12억원으로 증가했다면 매출 성장률은 20%다.</div>
+
+    <hr class="section-divider">
+
+    <h3 id="s2-4" class="anchor-target">4) 고객</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>개념</th><th>계산식</th><th>활용</th></tr></thead>
+        <tbody>
+          <tr><td>순수고객추천지수(NPS, Net Promoter Score)</td><td>고객이 제품·서비스를 다른 사람에게 추천하고자 하는 의지 측정</td><td>(권유자 비율) − (비판자 비율). 추천의향 0~10점 → 권유(9~10), 중립(7~8), 비판(0~6)</td><td>고객 충성도 측정</td></tr>
+          <tr><td>고객생애가치(LTV, Lifetime Value)</td><td>한 명의 고객이 회사와의 장기적 관계 동안 제공하는 예상 가치</td><td>고객이 유지하는 동안 생산되는 순이익의 총합</td><td>고객 유치·유지·재구매 전략 및 자원 할당</td></tr>
+          <tr><td>고객유지율(CRR, Customer Retention Rate)</td><td>기업이 유지하고 있는 고객 중 얼마나 많은 고객이 재방문하는지</td><td>(재방문 고객 수) ÷ (이전 기간 총고객 수) × 100(%)</td><td>고객 유지 전략 효과 평가</td></tr>
+          <tr><td>월간 활성 사용자(MAU, Monthly Active User)</td><td>특정 서비스·앱·웹사이트를 한 달 동안 이용한 사용자 수</td><td>—</td><td>서비스 인기도·성장 추적, 사용자 유치·유지 전략 수립</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="quote-box quote-example"><strong>NPS 예시</strong> : 추천의향을 0~10점으로 묻고, 9~10점이 권유자, 7~8점이 중립, 0~6점이 비판자로 분류된다. 권유자 비율이 60%, 비판자 비율이 20%라면 NPS = 40.</div>
+    <div class="quote-box quote-example"><strong>LTV 예시</strong> : 한 명의 고객이 회사의 제품을 평균 3년 동안 구매하고 매년 100만원의 순이익을 제공한다면 LTV = 300만원.</div>
+    <div class="quote-box quote-example"><strong>CRR 예시</strong> : 이전 기간에 100명의 고객을 보유하고 현재 기간에 80명이 재방문한다면 CRR = 80%.</div>
+    <div class="quote-box quote-example"><strong>MAU 예시</strong> : 특정 앱의 MAU가 10,000명이라면 해당 앱을 한 달 동안 최소 한 번 이상 사용한 사용자가 10,000명이라는 뜻이다.</div>
+
+    <h4>고객성향·고객욕구·구매패턴·고객만족도·고객 행동 데이터</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>항목</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>고객성향</td><td>고객들의 행동·선호도·관심사 등을 파악하여 그룹화하고 분석한 정보. 구매 기록·웹 방문·소셜 미디어 활동 등으로 수집</td></tr>
+          <tr><td>고객욕구</td><td>고객들이 제품·서비스를 선택하고 구매하는 동기와 욕구. 설문·인터뷰·소셜 미디어 분석 등으로 수집</td></tr>
+          <tr><td>구매패턴</td><td>고객들이 특정한 행동을 반복하는 패턴(구매 행동 패턴). 맞춤형 제안·재구매 유도·크로스셀링 기회 발굴에 활용</td></tr>
+          <tr><td>고객만족도</td><td>고객이 제공받는 제품·서비스에 대한 만족도. 설문조사나 피드백을 통해 수집</td></tr>
+          <tr><td>고객 행동 데이터</td><td>고객이 제품·서비스를 이용하는 과정에서 보이는 행동 데이터 총체. 구매 기록·방문 빈도·이벤트 참여·웹사이트 방문 시간 등</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>고객 세그먼트(segment)</h4>
+    <ul>
+      <li>고객들을 공통적인 특성에 따라 분류하는 활동 또는 그 결과물</li>
+      <li>나이·성별·지역·소득 수준·관심사 등을 기준으로 분류</li>
+      <li>각 세그먼트에 맞는 제품·서비스·마케팅 전략 개발에 활용</li>
+    </ul>
+
+    <h4>잠재고객 관련 지표</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>영업을 통해 확인한 잠재고객</td><td>영업·상담 등을 통해 제품 구입 확률이 높다고 판단된 고객 수. 영업 상담 내역·행동 기록·관심사 조사 등으로 수집</td></tr>
+          <tr><td>마케팅에서 식별된 잠재고객</td><td>마케팅 활동을 통해 특정 제품·서비스에 관심을 표현한 고객. 이메일 구독·웹사이트 등록·이벤트 참가 등으로 식별</td></tr>
+          <tr><td>잠재고객당 비용</td><td>마케팅 활동을 통해 확보한 잠재고객을 얻기 위해 투자한 비용. (마케팅 캠페인 비용) ÷ (총 확보 잠재고객 수)</td></tr>
+          <tr><td>고객획득비용</td><td>총마케팅 비용을 신규 고객 수로 나눈 값. 낮을수록 비즈니스 수익성 향상</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="section-divider">
+
+    <h3 id="s2-5" class="anchor-target">5) 고객관계관리(CRM, Customer Relationship Management)</h3>
+
+    <h4 id="s2-5a" class="anchor-target">(1) 고객 정보 및 관련 데이터</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>데이터</th><th>내용</th><th>활용</th></tr></thead>
+        <tbody>
+          <tr><td>고객 개인 신상정보</td><td>이름·연락처·이메일·주소·생년월일 등</td><td>개인화된 마케팅 전략 수립, 고객 관계 유지</td></tr>
+          <tr><td>마케팅 채널 선호도</td><td>고객이 선호하는 상호작용 채널(전화·이메일·채팅·소셜미디어 등)</td><td>채널별 맞춤 커뮤니케이션 제공</td></tr>
+          <tr><td>통화기록</td><td>고객과의 전화 통화 내용 기록. 문의 내용·문제 해결 과정·피드백 등</td><td>고객 요구사항 파악, 서비스 개선·마케팅 전략 반영</td></tr>
+          <tr><td>이메일 교환 기록</td><td>고객과의 이메일 소통 내용 기록</td><td>개인화된 응답 및 서비스 제공, 이전 대화 참조</td></tr>
+          <tr><td>채팅 로그(log)</td><td>고객과의 채팅 대화 내용 기록·분석</td><td>고객 요구사항·선호도 파악, 마케팅 전략 개선</td></tr>
+          <tr><td>소셜 미디어 상호작용 기록</td><td>댓글·좋아요·공유·소셜 미디어 대화 기록</td><td>고객 관심사·선호도·소비 행동 파악, 관계 강화</td></tr>
+          <tr><td>고객의 의견 및 피드백</td><td>만족도 조사·평가 점수·의견·개선 사항 등</td><td>제품·서비스 개선 인사이트 도출</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="s2-5b" class="anchor-target">(2) 구매 이력 관련 데이터</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>데이터</th><th>내용</th><th>활용</th></tr></thead>
+        <tbody>
+          <tr><td>구매일자</td><td>고객이 어떤 날짜에 어떤 제품을 구매했는지</td><td>구매 주기·선호 시기 파악, 맞춤형 마케팅 활동</td></tr>
+          <tr><td>거래금액</td><td>고객이 구매한 상품·서비스의 가격</td><td>고객 구매력·선호 가격대 파악, 세그먼트 구분</td></tr>
+          <tr><td>결제정보</td><td>고객이 사용한 결제 수단 관련 정보</td><td>결제 선호도 파악, 맞춤형 결제 옵션 제공</td></tr>
+          <tr><td>구매채널</td><td>고객이 제품·서비스를 구매하는 데 사용한 채널 정보</td><td>효과적인 판매경로 파악, 마케팅 전략 개선</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="s2-5c" class="anchor-target">(3) 서비스 요청 이력 관련 데이터</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>데이터</th><th>내용</th><th>활용</th></tr></thead>
+        <tbody>
+          <tr><td>문의내역</td><td>고객이 서비스에 대해 문의한 내용과 처리 상태</td><td>고객 요구사항 파악, 고객 만족도 향상, 이탈 방지</td></tr>
+          <tr><td>서비스 문제 해결 기록</td><td>고객이 겪은 문제·불만 및 해결 과정·결과 기록</td><td>유사 문제 반복 시 신속 대응, 제품·서비스 개선</td></tr>
+          <tr><td>서비스 품질 평가</td><td>고객들이 제공한 서비스 평가 점수·리뷰 등</td><td>서비스 강점·약점 파악, 경쟁사 비교</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="section-divider">
+
+    <h3 id="s2-6" class="anchor-target">6) 전자상거래(E-Commerce, 이커머스)</h3>
+
+    <h4>접속·트래픽 지표</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>개념</th><th>활용</th></tr></thead>
+        <tbody>
+          <tr><td>웹사이트 접속자 수</td><td>웹사이트에 접속한 방문자의 수</td><td>웹사이트 인기도·관심도·사용자 동향 파악</td></tr>
+          <tr><td>모바일 기기 접속자 수</td><td>모바일 기기를 통해 웹사이트·앱에 접속한 사용자 수</td><td>모바일 사용자 선호도·구매 패턴 파악, 모바일 마케팅 전략 개선</td></tr>
+          <tr><td>자연검색량</td><td>특정 검색어가 검색 엔진에서 얼마나 많이 검색되는지</td><td>키워드 선택·콘텐츠 최적화·검색 엔진 순위 개선 전략 수립</td></tr>
+          <tr><td>특정 콘텐츠의 방문자 수</td><td>특정 콘텐츠 페이지에 접속한 방문자 수</td><td>인기 콘텐츠 파악, 관심 주제 분석</td></tr>
+          <tr><td>페이지 잔류시간</td><td>방문자들이 특정 페이지에 머무는 시간</td><td>사용자 관심도·참여도 파악, 콘텐츠 전략 조정</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>광고 성과 지표</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>개념</th><th>계산식</th><th>특징</th></tr></thead>
+        <tbody>
+          <tr><td>노출도(Impression)</td><td>광고에 노출된 횟수</td><td>—</td><td>CPM 산정 기준</td></tr>
+          <tr><td>클릭률(CTR, Click-Through Rate)</td><td>광고·링크를 클릭한 사용자의 비율</td><td>(클릭 수) ÷ (노출 수)</td><td>광고 캠페인 효과 평가 지표</td></tr>
+          <tr><td>전환율(CVR, Conversion rate)</td><td>광고를 본 후 실제 행동(구매·가입·다운로드 등)으로 옮기는 비율</td><td>(전환 수행 사용자 수) ÷ (마케팅 참여 전체 사용자 수) × 100(%)</td><td>전환퍼널 최적화 지표</td></tr>
+          <tr><td>이탈률</td><td>웹사이트·앱 등에서 사용자가 페이지를 떠나는 비율</td><td>—</td><td>사용자 경험·페이지 효과성 평가</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="quote-box quote-example"><strong>CTR 예시</strong> : 광고가 1,000번 노출되었고 그 중 100번 클릭되었다면 CTR = 10%.</div>
+    <div class="quote-box quote-example"><strong>CVR 예시</strong> : 특정 광고 캠페인에서 1,000명의 사용자가 방문했고 그 중 100명이 구매를 완료했다면 전환율 = 10%.</div>
+    <div class="quote-box quote-example"><strong>이탈률 예시</strong> : 특정 웹페이지의 이탈률이 50%라면 절반의 사용자가 해당 페이지에서 다른 페이지로 이동했음을 의미한다.</div>
+
+    <ul>
+      <li><strong>랜딩 페이지(landing page)</strong> : 광고가 탑재된 웹사이트 페이지</li>
+      <li><strong>퍼널(funnel)</strong> : 광고 노출 대비 실제 구매자 수가 적어, 이들의 숫자를 시각화할 때 깔대기 모양으로 보이는 것</li>
+    </ul>
+    <div class="quote-box quote-example">퍼널 예시 : 광고를 본 사람 1,000명 → 웹사이트 방문 300명 → 장바구니 담기 100명 → 실제 구매 30명. 단계마다 숫자가 줄어드는 모양이 깔때기(funnel)를 닮아서 붙은 이름이다.</div>
+
+    <h4>광고 비용 지표</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>개념</th><th>공식</th></tr></thead>
+        <tbody>
+          <tr><td>클릭당 비용(CPC, Cost per Click)</td><td>광고 클릭 획득에 지불하는 평균 비용</td><td>광고비 ÷ 클릭 수</td></tr>
+          <tr><td>천 번 노출당 비용(CPM, Cost per Millennium)</td><td>광고 1,000번 노출에 지불하는 평균 비용</td><td>광고비 ÷ 노출 수 × 1,000</td></tr>
+          <tr><td>인스톨당 비용(CPI, Cost per Install)</td><td>앱 설치에 지불하는 평균 비용</td><td>광고비 ÷ 설치 수</td></tr>
+          <tr><td>액션당 비용(CPA, Cost per Action)</td><td>특정 액션(구매·가입·다운로드 등) 수행에 지불하는 평균 비용</td><td>광고비 ÷ 액션 수</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="quote-box quote-example"><strong>CPC 예시</strong> : 100만원 투자, 2,000클릭 → CPC = 500원<br>
+    <strong>CPM 예시</strong> : 100만원 투자, 1,000,000노출 → CPM = 1,000원<br>
+    <strong>CPI 예시</strong> : 100만원 투자, 2,000설치 → CPI = 500원<br>
+    <strong>CPA 예시</strong> : 100만원 투자, 500구매 → CPA = 2,000원</div>
+
+    <div class="quote-box quote-point">CPC·CPM·CPI·CPA 비교 : CPC는 클릭, CPM은 노출 1,000회, CPI는 앱 설치, CPA는 구매·가입 등 특정 액션을 기준으로 비용을 측정한다. 측정 기준이 다를 뿐 모두 광고 효율성을 평가하는 지표다.</div>
+
+    <h4>기타 전자상거래 지표</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>개념</th></tr></thead>
+        <tbody>
+          <tr><td>콘텐츠 반응률</td><td>콘텐츠에 대한 공유·좋아요·댓글 등 상호작용 비율. 효과적인 콘텐츠 전략 개발에 활용</td></tr>
+          <tr><td>SNS 방문자 수 증가율</td><td>소셜 미디어 플랫폼의 방문자 수 변화. 마케팅 전략 개선·시장 동향 파악에 활용</td></tr>
+          <tr><td>SNS 플랫폼별 투자수익률(ROI)</td><td>각 소셜 미디어 플랫폼에서의 마케팅 투자 대비 수익률</td></tr>
+          <tr><td>다운로드 수</td><td>앱이나 콘텐츠 상품 등의 다운로드 횟수. 제품·서비스 인기도·수요 측정</td></tr>
+          <tr><td>팔로워(Follower) 수</td><td>소셜 미디어 플랫폼에서 계정·페이지를 팔로우하는 사용자 수</td></tr>
+          <tr><td>리드(Lead)</td><td>잠재적 고객 또는 관심 사용자들의 정보. 이름·이메일·전화번호·관심사·구매 의향 등 포함</td></tr>
+          <tr><td>고착도(Stickiness)</td><td>사용자가 특정 제품·서비스·플랫폼에 얼마나 정서적·경제적으로 종속되어 있는지 측정</td></tr>
+          <tr><td>장바구니에 있는 제품 수</td><td>온라인 쇼핑 사이트·앱에서 사용자가 장바구니에 담은 제품 수. 구매 의향 파악 및 전환율 향상 전략 수립에 활용</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="quote-box quote-example">리드 예시 : 웹사이트에서 "무료 가이드 받기" 버튼을 클릭해 이메일을 남긴 방문자가 리드다. 아직 구매는 안 했지만 관심을 표현한 잠재 고객으로, 이후 이메일 마케팅 등으로 구매까지 유도한다.</div>
+    <div class="quote-box quote-example">고착도 예시 : 특정 음악 스트리밍 서비스에 플레이리스트를 수백 개 만들어두면 다른 서비스로 이동하기 어려워진다. 이처럼 사용자가 서비스를 쉽게 떠나지 못하는 상태가 고착도가 높은 것이다.</div>
+
+    <hr class="section-divider">
+
+    <!-- ===== 3. 공급관리(생산운영관리) ===== -->
+    <h2 id="s3" class="anchor-target">3. 공급관리(생산운영관리) 기본정보</h2>
+
+    <h3 id="s3-1" class="anchor-target">1) 생산시스템의 효율성 분석을 위해 필요한 투입 및 산출 데이터</h3>
+
+    <p>각 기업·기관의 생산성 및 효율성을 비교·분석하기 위해 각 생산시스템에 필요한 투입 데이터와 산출 데이터를 파악해야 한다.</p>
+    <ul>
+      <li><strong>투입 데이터</strong> : 자재, 에너지, 정보, 경영, 기술, 노동 등</li>
+      <li><strong>산출 데이터</strong> : 제품, 정보, 경험 등</li>
+    </ul>
+
+    <h4>기업·기관 유형별 투입·산출 데이터 예시</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>유형</th><th>투입 데이터</th><th>산출 데이터</th></tr></thead>
+        <tbody>
+          <tr><td>병원</td><td>과별 의사·간호사·행정 직원·의료 장비 및 시설·건물·행정 시스템</td><td>각종 의료 서비스의 질, 완치된 환자</td></tr>
+          <tr><td>공장</td><td>노동자·공장 부지·원자재·설비 배치·에너지·생산 부서·기계 장비</td><td>완제품</td></tr>
+          <tr><td>대학</td><td>교수·행정 직원·연구 시설 및 설비·강의실·학교 건물·학교 부지·도서관</td><td>졸업생, 연구 실적</td></tr>
+          <tr><td>국가</td><td>국민·대통령·관료·지자체·행정기관·행정 시스템·군사력</td><td>국가 위상, 경쟁력</td></tr>
+          <tr><td>음식점</td><td>재료·요리사·직원·요리 기구·전통·위치·인테리어</td><td>음식, 고객 만족도</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="section-divider">
+
+    <h3 id="s3-2" class="anchor-target">2) 수요예측</h3>
+
+    <h4>① 수요예측의 개념</h4>
+    <ul>
+      <li>수요분석에 기반하여 시장조사와 다양한 예측조사 결과를 취합하여 미래수요를 예측하는 일</li>
+      <li>산업 전체의 수요가 질적·양적으로 어떤 경향을 나타내고 어떤 상태에 있는가를 과거 및 현재의 데이터를 기초로 하여 예측</li>
+      <li>생산운영관리의 가장 큰 목표는 <strong>수요와 공급의 일치</strong>. 공급은 조절 가능한 반면 수요는 조절할 수 없으므로, 수요예측은 '알 수 없고 조절할 수 없는 수요'에 대해 공급을 맞추는 활동으로 재해석 가능</li>
+      <li>불확실성으로 인해 수요예측의 정확도가 떨어질 수 있으며, 이에 여러 불확실성을 제거하기 위한 활동도 수요예측의 일부로 볼 수 있음</li>
+    </ul>
+
+    <h4>② 시간적 범위에 따른 수요예측 구분</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>구분</th><th>기간</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>단기 수요예측</td><td>시간·일·주·월</td><td>현재 진행되고 있는 생산운영과 관련된 예측</td></tr>
+          <tr><td>장기 수요예측</td><td>분기·반기·년·향후 계획</td><td>제품·서비스 등 산출물의 수명 기간과 관련된 예측</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>③ 수요 변화</h4>
+    <p>수요예측은 불확실성으로 인해 정확할 수 없으며, 그 불확실성 중 수요 변화에 주목해야 한다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>유형</th><th>내용</th><th>예시</th></tr></thead>
+        <tbody>
+          <tr><td>수평적 수요</td><td>수요가 일정한 평균을 중심으로 오르내리는 유형</td><td>치약·칫솔과 같은 생필품</td></tr>
+          <tr><td>추세적 수요</td><td>시간의 흐름에 따라 평균값이 증가 또는 감소하는 형태</td><td>일반폰 → 터치폰 → 스마트폰으로의 장기적 변화</td></tr>
+          <tr><td>계절적 수요</td><td>계절이나 주·월에 따라 수요의 증감이 반복되는 패턴</td><td>기후 변화에 따른 제철 과일이나 전력 사용량</td></tr>
+          <tr><td>순환적 수요</td><td>연 단위 이상의 장기간 동안 수요의 증감이 반복되는 패턴</td><td>야구·축구·올림픽 등</td></tr>
+          <tr><td>무작위 수요</td><td>기상 변화나 자연재해 등 예측이 불가능하고 무작위로 변하는 수요</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>④ 수요예측 방법</h4>
+    <p>더 나은 예측을 위해서 정확도를 측정해야 하며, 일반적으로 예측의 정확도는 실제값과 예측값의 차이로 측정된다. 기존 자료(과거 데이터)를 활용하여 예측값과 실제값을 관찰하고, 예측오차가 가장 적은 기법을 선정한 뒤 예측오차 대비 비용(기회비용)을 고려하여 예측 기법을 선정해야 한다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>방법</th><th>영문</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>평균절대오차</td><td>MAD (Mean Absolute Deviation)</td><td>{(예측값) − (실제값)}의 절댓값을 평균한 것. 오차의 절댓값을 평균한 값</td></tr>
+          <tr><td>평균절대백분율오차</td><td>MAPE (Mean Absolute Percent Error)</td><td>평균절대오차를 퍼센트로 나타낸 것</td></tr>
+          <tr><td>평균제곱오차</td><td>MSE (Mean Squared Error)</td><td>평균절대오차를 제곱한 뒤 (n-1)로 나누어 준 값</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">실제 수요가 100개였는데 예측 수요가 90개라면 예측오차는 10개다. MAD는 이런 오차의 크기를 평균으로 보는 것이고, MAPE는 오차를 실제 수요 대비 비율로 보는 방식이다.</div>
+
+    <hr class="section-divider">
+
+    <h3 id="s3-3" class="anchor-target">3) 품질관리</h3>
+
+    <h4>① 품질관리(Quality Control)</h4>
+    <ul>
+      <li><strong>품질</strong> : 제품 또는 서비스가 제공하는 성능이 고객의 기대를 충족시키는 정도</li>
+      <li>품질 결과를 표준과 비교·측정하여 표준에 미달되는 경우 수정하는 프로세스로 공정이 잘 진행되고 있는지를 확인하기 위한 목적으로 실시</li>
+      <li>기업은 품질관리를 위해 공정산출물의 데이터를 통계적 기법에 기반하여 점검</li>
+    </ul>
+
+    <h4>② 품질검사</h4>
+    <p>품질관리를 위해서는 결국 <strong>검사</strong>(제품이나 서비스를 표준과 비교하는 평가 활동)를 실시해야 한다.</p>
+
+    <h4>검사 시기에 따른 구분</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>시기</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>생산 전 검사</td><td>투입되는 자원의 적합성 검사(샘플링 검사)</td></tr>
+          <tr><td>생산 중 검사</td><td>투입자원의 결과물 전환과정의 적합성 검사(공정관리)</td></tr>
+          <tr><td>생산 후 검사</td><td>제품이 고객에게 인도되기 전에 최종적으로 실시하는 적합성 검사(샘플링 검사). 공정관리 형태로 진행</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">빵 공장을 예로 들면 — 생산 전 검사는 밀가루·버터 같은 원재료 상태를 확인하는 것, 생산 중 검사는 반죽 온도나 굽는 시간을 확인하는 것, 생산 후 검사는 포장 전 완성된 빵의 모양·무게·상태를 확인하는 것이다.</div>
+
+    <h4>검사 시 고려사항</h4>
+    <ul>
+      <li>검사의 양</li>
+      <li>검사의 빈도</li>
+      <li>검사의 위치 : 공정의 어느 위치에서 검사가 이루어져야 하는지 (중앙 vs 생산현장, 불량이 자주 발생하는 지점 파악 후 해당 지점에서 검사 필요)</li>
+      <li>발생횟수(속성에 대한 검사) 또는 특성치의 값(변량에 대한 검사)</li>
+    </ul>
+
+    <h4>전형적인 검사 시기 및 위치</h4>
+    <ul>
+      <li>원재료나 구매 부품(납품된) 수령 시, 완제품의 출하 전</li>
+      <li>높은 가격의 생산 공정 이전, 돌이킬 수 없는 공정 이전, 결함이 숨겨지는 공정 이전 등</li>
+    </ul>
+
+    <h4>③ 6가지 주요 품질 기법</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>기법</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>체크리스트 기법</td><td>검토가 필요한 사항에 대하여 체크리스트를 작성하여 실무자와 품질관리자가 점검하는 기법 (예: 공중 화장실 청결도 체크)</td></tr>
+          <tr><td>히스토그램 기법</td><td>데이터의 범위를 몇 개의 계급으로 나누고 각 계급의 발생 빈도수를 막대그래프로 나타낸 그림 (데이터 분포 형태를 간편히 파악 가능)</td></tr>
+          <tr><td>산점도 기법</td><td>두 변수의 특성 및 요인 관계를 시각적으로 나타내고 싶은 경우에 사용하는 방법 (회귀분석, IPA 분석)</td></tr>
+          <tr><td>그래프 기법</td><td>막대 그래프·띠 그래프·꺾은 선 그래프·원 그래프·레이더 차트 등 보는 사람이 알기 쉽고 구체적으로 판단 가능하게 하는 방법</td></tr>
+          <tr><td>파레토 분석 기법</td><td>문제의 원인을 중요하지 않은 다수의 원인과 중요한 소수의 원인으로 분류하는 방법. 80%의 품질 문제가 20%의 주요 원인에 집중 (주란)</td></tr>
+          <tr><td>서브퀄(SERVQUAL)</td><td>서비스 품질 측정 기법으로 고객의 서비스 품질에 대한 인식 정도를 측정 (양적 접근방식이 아닌 질적 접근방식)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">호텔 서비스를 평가할 때 "체크인 속도가 빨랐는가", "직원이 친절했는가", "시설이 믿을 만했는가" 같은 항목으로 고객 인식을 조사하는 방식이 SERVQUAL에 가깝다. 수치(판매량·불량률)가 아닌 고객이 느끼는 품질 인식을 측정하는 것이 핵심이다.</div>
+    <div class="quote-box quote-example">파레토 분석 : "전체 불량의 80%는 20%의 원인에서 발생한다"는 원리를 이용해, 가장 중요한 원인부터 먼저 해결하도록 우선순위를 정하는 기법이다. 공장에서 불량 원인이 10가지라면 그 중 2개만 잡아도 대부분의 불량을 해결할 수 있다는 접근이다.</div>
+
+    <hr class="section-divider">
+
+    <h3 id="s3-4" class="anchor-target">4) 공급사슬관리(SCM, Supply Chain Management)</h3>
+
+    <h4>① SCM 개념</h4>
+    <ul>
+      <li>공급사슬을 전략적으로 조정하여 공급과 수요를 통합적으로 관리하는 것을 목적으로 하는 관리 방법</li>
+      <li>하나의 공장이나 기업이 공급의 모든 과정을 진행할 수 없으므로 공급사슬관리가 중요함</li>
+      <li>공급사슬은 종종 <strong>가치사슬(Value Chain)</strong>이라고도 불림 — 제품이나 서비스가 공급사슬을 따라 이동하며 가치가 부가되는 개념을 반영</li>
+      <li>일반적으로 가치사슬은 단일 조직이 아니라 독립적인 다수의 조직으로 구성</li>
+    </ul>
+    <div class="quote-box quote-example">자동차 산업에 공급사슬이 없다면 자동차 생산기업은 광석을 캐는 일부터 소비자에게 판매하고 애프터서비스를 제공하는 일까지 모두 도맡아야 한다. 현대 기업들은 어떤 형태로든 다른 기업과 공급-수요 계약을 맺고 있으며 계약에 따라 공급자가 되기도, 수요자가 되기도 한다.</div>
+
+    <h4>② 공급사슬의 대표적인 이동 유형</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>유형</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>물리적인 이동(physical movement)</td><td>제품이 실질적으로 이동하는 것</td></tr>
+          <tr><td>현금흐름(flow of cash)</td><td>제품이 이동하면 제품 대금을 치르면서 현금이 이동. 일반적으로 제품의 이동 방향과 반대로 움직임</td></tr>
+          <tr><td>정보의 교환(exchange of information)</td><td>공급사슬 참여자 간의 정보 공유</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>공급사슬을 단순히 물류(Logistics)로만 인식하는 경우도 있으나, 물류는 공급사슬의 일부분에 해당함</p>
+    <div class="quote-box quote-example">온라인 쇼핑몰에서 스마트폰을 주문한다고 하자. 공장에서 물류창고를 거쳐 내 집으로 폰이 배송되는 것이 물리적 이동, 내가 카드로 결제하면 쇼핑몰→제조사→부품공급사 방향으로 대금이 흐르는 것이 현금흐름(제품 이동 방향과 반대), 재고 현황·배송 추적 정보가 각 참여자에게 공유되는 것이 정보의 교환이다.</div>
+
+    <hr class="section-divider">
+
+    <h3 id="s3-5" class="anchor-target">5) 구매관리</h3>
+
+    <h4>① 구매부서의 역할</h4>
+    <ul>
+      <li>기업이나 공장의 구매(Purchasing)부서는 제품 생산과 서비스 제공에 필요한 자재·부품·보급품 및 서비스를 확보할 책임</li>
+      <li>구매는 구매 제품의 원가 관리 외에 제품 및 서비스의 품질, 인도(delivery) 시기에 중요한 영향을 미침</li>
+      <li>구매부서의 임무 : 공급자 식별 및 계약 협상, 공급자 데이터베이스 유지관리, 적시에 비용 효율적인 방식으로 운영 요구사항 이상의 제품 및 서비스 획득, 공급업체 관리 등</li>
+      <li>공급업체 선택, 계약 협상, 파트너십 구축, 공급업체와 다양한 기능부서 간의 중개자 역할</li>
+    </ul>
+
+    <h4>② 구매관리활동 — 구매주기(Purchasing Cycle)</h4>
+    <div class="quote-box quote-flow">구매부서의 구매요청 확인 → 적절한 공급자 선정 → 공급자에게 주문 → 주문 감독(monitoring orders) → 주문제품 접수(receiving orders)</div>
+
+    <h4>③ 구매 유형</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>유형</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>중앙집중구매</td><td>단일 부서(주로 본사 구매부서)에 의해 기업의 구매 업무가 수행되는 형태</td></tr>
+          <tr><td>분산구매</td><td>개별 부서나 별도의 여러 곳에서 필요한 제품을 각기 구매. 구매 주체가 본사 구매부서가 아닌 경우가 많음</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">전국 지점에서 쓰는 사무용품을 본사 구매부서가 한꺼번에 계약해 구매하면 중앙집중구매, 각 지점이 지역 상황에 맞게 직접 필요한 물품을 구매하면 분산구매다. 중앙집중구매는 대량구매로 비용을 낮출 수 있고, 분산구매는 각 현장의 필요에 빠르게 대응할 수 있다.</div>
+
+    <h4>④ 구매관리와 데이터</h4>
+    <ul>
+      <li>본사 구매부서는 다른 부서나 지역에서 어떤 물품을 필요로 하는지에 대한 데이터 획득이 필수적</li>
+      <li><strong>트래픽관리(Traffic management)</strong> : 자재 또는 제품의 입·출하 선적을 감독하는 것. 다양한 선적 대안·정부 규정·수량 및 시기에 대한 요구사항·잠재적 선적 지연 등을 고려하여 선적방법과 시점 결정</li>
+      <li><strong>시스템 추적(System Tracking &amp; Tracing)</strong> : 선적된 제품과 자재를 시스템으로 추적하여 선적품 현황 파악 및 선적비용·일정계획에 대한 업데이트 제공</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <h3 id="s3-6" class="anchor-target">6) 황소채찍효과(Bullwhip Effect)</h3>
+
+    <h4>① 개념</h4>
+    <ul>
+      <li>공급사슬의 후방(역방향)에 위치하는 기업일수록 재고 변동 폭이 점점 증가하는 현상</li>
+      <li>효과적인 공급사슬 달성에 가장 큰 걸림돌은 <strong>재고</strong> — 공급사슬의 버퍼(buffer) 역할을 하지만 동시에 재무상태를 악화시키므로 생산운영관리에서 <strong>필요악</strong>으로 불림</li>
+    </ul>
+    <div class="quote-box quote-example">소비자의 수요가 10개일 때 — 소매점은 안전재고 2개를 더해 도매상에게 12개를 주문하고, 도매상은 안전재고 3개를 더해 유통상에게 15개를 주문하며, 유통상은 공장에 18개를 주문한다. 실제 소비자 수요는 10개지만 공급사슬 전체에서 18개가 생산되어 결국 80%의 재고가 남게 된다. 이처럼 소비자와 멀어질수록 재고 변동이 커지는 것이 황소채찍효과다.</div>
+
+    <h4>② 황소채찍효과의 영향</h4>
+    <ul>
+      <li>재고흐름속도에 <strong>병목(bottle-neck) 현상</strong>을 발생시킬 수 있음
+        <ul>
+          <li><strong>재고흐름속도</strong> : 재고(자재·제품)가 공급사슬을 따라 이동하는 속도</li>
+        </ul>
+      </li>
+      <li>자재가 공급사슬을 따라 더 빨리 이동할수록 재고유지비용이 적어지고 고객 주문이 더 빨리 이행되며 현금 전환도 빨라지나, 황소채찍효과는 이 과정에 병목 현상을 발생시킴</li>
+      <li>IT 기술을 통한 실시간 재고 알림, 실시간 수요 알림 등 정보기술로 억제 가능</li>
+      <li>글로벌 기업들은 대부분 재고 현황 등 경영정보를 실시간으로 시각화하여 모니터링할 수 있는 시스템 보유</li>
+    </ul>
+
+    <hr class="section-divider">
+
+    <h3 id="s3-7" class="anchor-target">7) 재고와 경제적 주문량 모형</h3>
+
+    <h4>① 재고관리</h4>
+    <p><strong>목적</strong> : 재고비용을 합리적으로 유지하면서 만족스러운 수준의 고객서비스를 달성하는 것</p>
+
+    <h4>재고관리 지표</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>재고회전율</td><td>평균 재고투자액 대비 판매된 제품의 연간 비용(매출액) 비율. 일반적으로 높을수록 효과적인 재고관리로 판단</td></tr>
+          <tr><td>재고공급일수</td><td>현재 보관 중인 재고를 이용할 시 기대되는 판매 가능일수. "현재의 재고로 며칠을 공급할 수 있는가"에 대한 답</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>재고관리에 필요한 지식</h4>
+    <ul>
+      <li>효율적인 재고관리를 위해 수요예측이 필수적이므로 예측오차 지표를 활용한 신뢰 가능한 수요예측 필요</li>
+      <li><strong>리드타임(lead time)</strong> : 주문시점과 해당 주문의 배송시점 간의 시간간격
+        <ul>
+          <li>예 : 딜러를 통해 자동차를 주문한 고객이 5일 뒤에 차량을 인도받았다면, 리드타임은 5일</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4>재고 관련 비용 유형</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>비용</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>재고유지비용</td><td>재고를 특정 시간 동안 보관하는 데 소요되는 비용</td></tr>
+          <tr><td>주문비용</td><td>재고를 주문하고 수령하는 데 발생하는 비용</td></tr>
+          <tr><td>재고부족비용</td><td>재고가 부족하여 판매하지 못하여 생기는 기회비용</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">편의점을 예로 들면 — 음료수를 창고에 쌓아두는 데 드는 냉장·보관비가 재고유지비용, 음료수를 새로 발주할 때마다 드는 주문·운송비가 주문비용, 음료수가 다 팔려서 손님이 그냥 돌아간 경우 놓친 매출이 재고부족비용이다.</div>
+
+    <h4>② 경제적 주문량(EOQ, Economic Order Quantity) 모형</h4>
+    <p>연간 재고유지관리 및 주문 비용의 합계를 최소화하는 고정 주문량을 결정하는 데 사용되는 모형.</p>
+
+    <h4>기본 가정</h4>
+    <ul>
+      <li>단지 하나의 제품만을 대상으로 함</li>
+      <li>연간 수요량은 알려져 있으며, 연중 균일한 수요 발생과 일정한 수요율 가정</li>
+      <li>한 번 정해진 리드타임은 변하지 않고 각 주문은 한 번에 배달되며 수량할인은 없다고 가정</li>
+      <li>재고유지비용과 주문비용이 균형을 이루면 최적 주문량 도출</li>
+    </ul>
+
+    <h4>기본 공식</h4>
+    <div class="info-box">
+      Q = 주문량, H = 단위당 유지비용, D = 연간 수요량, S = 주문비용<br><br>
+      연간재고유지비용 = (Q/2) × H<br>
+      연간주문비용 &nbsp;&nbsp;&nbsp;&nbsp; = (D/Q) × S<br>
+      총비용 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 연간재고유지비용 + 연간주문비용<br><br>
+      최적 주문량(EOQ) : (Q/2) × H = (D/Q) × S 가 되는 Q를 구함<br>
+      → EOQ = √(2DS/H)
+    </div>
+    <div class="quote-box quote-point">총비용이 최소가 되는 주문량은 연간재고유지비용과 연간주문비용이 같아지는 지점이다. 주문량이 많으면 재고유지비용이 늘고, 주문량이 적으면 자주 주문해야 해서 주문비용이 늘기 때문에 두 비용이 균형을 이루는 지점이 최적이다.</div>
+
+    <h4>③ 재고 모형</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>모형</th><th>내용</th><th>특징</th></tr></thead>
+        <tbody>
+          <tr><td>정량발주모형(Q-Model, Fixed Order Quantity Model)</td><td>보유 재고의 양이 재주문점(Reorder Point)에 도달하는 시점에 주문. 재주문점 시스템이라고도 불림</td><td>재고량 기준 주문</td></tr>
+          <tr><td>정기발주모형(P-Model, Fixed-Order-Interval Model)</td><td>일정한 시간 간격(정기적)으로 주문이 이루어지는 경우 사용. 주기조사시스템이라고도 불림</td><td>정기발주모형은 정량발주모형에 비해 안전재고가 많음</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">재고가 20개 이하로 떨어질 때마다 100개씩 주문하면 정량발주모형(Q-Model)에 가깝다. 매주 월요일마다 남은 재고를 확인하고 필요한 만큼 주문하면 정기발주모형(P-Model)에 가깝다.</div>
+
+    <hr class="section-divider">
+
+    <h3 id="s3-8" class="anchor-target">8) PERT/CPM과 프로젝트 관리</h3>
+
+    <h4>① PERT/CPM 개념</h4>
+    <p>기업이 직면하는 다양한 제약을 효과적으로 관리하기 위해 프로젝트 관리기법이 필요하며, PERT/CPM 기법은 가장 자주 사용되는 프로젝트 관리기법이다. 근래에는 PERT와 CPM을 구분하지 않고 <strong>PERT/CPM</strong>으로 혼용하여 사용한다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>기법</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>PERT(Program Evaluation and Review Technique)</td><td>1950년대 미국 국방성에서 미사일 개발 계획 관리에 활용. 각 활동의 소요시간을 <strong>확률적</strong>으로 추정. 규모가 큰 프로젝트 계획·관리에 적절</td></tr>
+          <tr><td>CPM(Critical Path Method)</td><td>1950년대 듀퐁 사에서 화학공장 유지·보수 작업 측정에 활용. 각 활동의 소요시간이 <strong>확정적</strong>이라는 데서 PERT와 차이</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>② PERT/CPM 활용 시 이점</h4>
+    <ul>
+      <li>전체 프로젝트의 총소요시간 추정 가능 (그림으로 나타내어 파악 용이)</li>
+      <li>프로젝트의 총소요시간에 영향을 주는 주요한 활동인 <strong>주 경로(Critical path)</strong> 식별 가능</li>
+      <li>전체 프로젝트의 총소요시간에 영향을 주지 않는 범위 내에서 각 활동들을 얼마나 늦게 시작하거나 완료할 수 있는지에 대한 <strong>지연 시간 정보</strong> 제공</li>
+    </ul>
+
+    <h4>③ 네트워크도</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>유형</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>AOA(Activity On Arrow)</td><td>활동이 화살표(arrow)에 표시되는 형태의 네트워크도. 노드(Node)는 활동들의 시작과 완료시점을 나타냄</td></tr>
+          <tr><td>AON(Activity On Node)</td><td>활동이 마디(node)에 표시되는 형태의 네트워크도. AON에서는 AOA와 달리 노드가 활동을 나타냄</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>노드별·화살표별 소요되는 시간을 추정하는 방법 : 확정적 시간 추정, 확률적 시간 추정</p>
+
+    <h4>④ PERT/CPM 계산 알고리즘</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>기호</th><th>영문</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>ES</td><td>Early Start</td><td>활동을 시작할 수 있는 가장 빠른 시간. 앞선 모든 활동이 최대한 빨리 시작된 것을 가정</td></tr>
+          <tr><td>EF</td><td>Early Finish</td><td>활동을 끝낼 수 있는 가장 빠른 시간</td></tr>
+          <tr><td>LS</td><td>Late Start</td><td>활동을 시작할 수 있으며, 프로젝트를 지연하지 않는 가장 늦은 시간</td></tr>
+          <tr><td>LF</td><td>Late Finish</td><td>활동을 끝낼 수 있으며, 프로젝트를 지연하지 않는 가장 늦은 시간</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>알고리즘 계산을 통해 도출 가능한 것</h4>
+    <ul>
+      <li>프로젝트의 총소요시간에 영향을 주는 주요한 활동인 주 경로</li>
+      <li>각 활동을 얼마나 늦게 시작하거나 완료할 수 있는지에 대한 지연시간 정보</li>
+      <li>현재 프로젝트가 어떠한 마일스톤에 와 있는지, 얼마나 지연될 것인지 등에 대한 정보 (시각화 시 활용)</li>
+    </ul>
+    <div class="quote-box quote-example">PERT/CPM을 쉽게 이해하면 — 10개 작업이 있는 프로젝트에서 "어떤 작업이 늦어지면 전체 일정이 밀리는가"를 찾는 것이 주 경로 분석이다. 주 경로에 없는 작업은 조금 늦게 시작해도 전체 일정에 영향이 없어서, 자원을 유연하게 배분할 수 있다.</div>
+
+    <hr class="section-divider">
+
+    <!-- 핵심 키워드 -->
+    <div id="keywords" class="keyword-section anchor-target">
+      <div class="keyword-section-title">✅ 핵심 키워드</div>
+      <div class="keyword-grid">
+        <div class="keyword-card"><div class="kw-term">시장점유율</div><div class="kw-desc">전체 시장에서 특정 기업이 차지하는 비율</div></div>
+        <div class="keyword-card"><div class="kw-term">성장률</div><div class="kw-desc">특정 기간 시장·기업 규모 증가를 백분율로 표현</div></div>
+        <div class="keyword-card"><div class="kw-term">투자수익률(ROI)</div><div class="kw-desc">(수익−비용)÷비용×100 — 투자 효과 측정</div></div>
+        <div class="keyword-card"><div class="kw-term">광고 투자 대비 수익률(ROAS)</div><div class="kw-desc">매출÷광고투자비용×100 — 광고 효율성 평가</div></div>
+        <div class="keyword-card"><div class="kw-term">재고회전율</div><div class="kw-desc">판매량÷평균재고량 — 판매채널 효율성 측정</div></div>
+        <div class="keyword-card"><div class="kw-term">재구매율</div><div class="kw-desc">기존 고객의 재구매 비율 — 고객 충성도 지표</div></div>
+        <div class="keyword-card"><div class="kw-term">업셀링 / 크로스셀링</div><div class="kw-desc">더 비싼 상품 유도 / 관련 상품 함께 구매 유도</div></div>
+        <div class="keyword-card"><div class="kw-term">상품 판매 수</div><div class="kw-desc">특정 기간 동안 판매된 상품의 수</div></div>
+        <div class="keyword-card"><div class="kw-term">순수고객추천지수(NPS)</div><div class="kw-desc">권유자 비율 − 비판자 비율 — 고객 충성도 측정</div></div>
+        <div class="keyword-card"><div class="kw-term">고객생애가치(LTV)</div><div class="kw-desc">한 고객이 장기 관계에서 제공하는 예상 총가치</div></div>
+        <div class="keyword-card"><div class="kw-term">고객유지율(CRR)</div><div class="kw-desc">재방문 고객 수÷이전 기간 총고객 수×100</div></div>
+        <div class="keyword-card"><div class="kw-term">월간 활성 사용자(MAU)</div><div class="kw-desc">한 달 동안 서비스를 이용한 사용자 수</div></div>
+        <div class="keyword-card"><div class="kw-term">클릭률(CTR)</div><div class="kw-desc">클릭 수÷노출 수 — 광고 성과 측정</div></div>
+        <div class="keyword-card"><div class="kw-term">전환율(CVR)</div><div class="kw-desc">전환 수행 사용자÷전체 참여 사용자×100</div></div>
+        <div class="keyword-card"><div class="kw-term">CPC / CPM / CPI / CPA</div><div class="kw-desc">클릭·노출1000회·설치·액션당 광고 비용 지표</div></div>
+        <div class="keyword-card"><div class="kw-term">고착도(Stickiness)</div><div class="kw-desc">사용자가 서비스에 종속된 정도</div></div>
+        <div class="keyword-card"><div class="kw-term">리드(Lead)</div><div class="kw-desc">잠재 고객의 연락처·관심사 등 정보</div></div>
+        <div class="keyword-card"><div class="kw-term">투입 데이터 / 산출 데이터</div><div class="kw-desc">생산시스템 효율성 분석의 기초 — 무엇을 넣고 무엇이 나오는가</div></div>
+        <div class="keyword-card"><div class="kw-term">수요예측</div><div class="kw-desc">과거·현재 데이터 기반으로 미래 수요를 예측하는 활동</div></div>
+        <div class="keyword-card"><div class="kw-term">수요 변화 유형</div><div class="kw-desc">수평적·추세적·계절적·순환적·무작위</div></div>
+        <div class="keyword-card"><div class="kw-term">MAD / MAPE / MSE</div><div class="kw-desc">수요예측 오차 측정 지표</div></div>
+        <div class="keyword-card"><div class="kw-term">품질관리(Quality Control)</div><div class="kw-desc">품질 결과를 표준과 비교·측정하여 수정하는 프로세스</div></div>
+        <div class="keyword-card"><div class="kw-term">파레토 분석</div><div class="kw-desc">80%의 문제가 20%의 원인에서 발생 — 중요 소수 원인 집중 해결</div></div>
+        <div class="keyword-card"><div class="kw-term">SERVQUAL</div><div class="kw-desc">서비스 품질에 대한 고객 인식 정도 측정 (질적 접근)</div></div>
+        <div class="keyword-card"><div class="kw-term">공급사슬관리(SCM)</div><div class="kw-desc">공급과 수요를 통합적으로 관리하는 방법</div></div>
+        <div class="keyword-card"><div class="kw-term">황소채찍효과(Bullwhip Effect)</div><div class="kw-desc">공급사슬 후방일수록 재고 변동폭이 커지는 현상</div></div>
+        <div class="keyword-card"><div class="kw-term">리드타임(lead time)</div><div class="kw-desc">주문시점과 배송시점 간의 시간간격</div></div>
+        <div class="keyword-card"><div class="kw-term">재고유지비용 / 주문비용 / 재고부족비용</div><div class="kw-desc">재고 관련 3가지 비용 유형</div></div>
+        <div class="keyword-card"><div class="kw-term">EOQ(Economic Order Quantity)</div><div class="kw-desc">총 재고비용을 최소화하는 최적 주문량 모형</div></div>
+        <div class="keyword-card"><div class="kw-term">정량발주모형(Q-Model)</div><div class="kw-desc">재주문점 도달 시 주문</div></div>
+        <div class="keyword-card"><div class="kw-term">정기발주모형(P-Model)</div><div class="kw-desc">일정 시간 간격으로 주문</div></div>
+        <div class="keyword-card"><div class="kw-term">PERT</div><div class="kw-desc">소요시간을 확률적으로 추정하는 프로젝트 관리 기법</div></div>
+        <div class="keyword-card"><div class="kw-term">CPM</div><div class="kw-desc">소요시간을 확정적으로 추정하는 프로젝트 관리 기법</div></div>
+        <div class="keyword-card"><div class="kw-term">주 경로(Critical Path)</div><div class="kw-desc">프로젝트 총소요시간에 영향을 주는 주요 활동 경로</div></div>
+        <div class="keyword-card"><div class="kw-term">ES / EF / LS / LF</div><div class="kw-desc">PERT/CPM 계산 알고리즘의 4가지 시간 기호</div></div>
+      </div>
+    </div>
+
+  </div><!-- /content-area -->
+
+  <nav class="nav-buttons" style="margin-top:40px; border-top:1px solid var(--border-light); border-bottom:none; padding-top:20px;">
+    <a href="index.html" class="btn btn-home">&#8962; 목차</a>
+    <a href="ch01_s02_1.html" class="btn">&lsaquo; Section 02-1</a>
+    <span class="nav-spacer"></span>
+    <a href="ch01_s03.html" class="btn btn-primary">Section 03 &rsaquo;</a>
+  </nav>
+
+</div><!-- /page-wrap -->
+</body>
+</html>

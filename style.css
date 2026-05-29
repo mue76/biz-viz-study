@@ -1,0 +1,906 @@
+/* ============================================================
+   경영정보시각화능력 수험가이드북 — 공통 스타일
+   디자인: Navy & Steel Blue (시안 A)
+   ============================================================ */
+
+/* ── 리셋 & 기본 ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:        #1A2B4A;
+  --navy-mid:    #2E4A7A;
+  --blue:        #2E5FAA;
+  --blue-light:  #5B8DD9;
+  --blue-pale:   #E8EDF8;
+  --blue-bg:     #F4F6FA;
+  --accent:      #1D4ED8;
+
+  --text-main:   #1E2A3A;
+  --text-sub:    #3A4A62;
+  --text-muted:  #637088;
+
+  --border:      #D5DCE8;
+  --border-light:#E8EDF8;
+  --bg-page:     #F8F9FC;
+  --bg-white:    #FFFFFF;
+
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   10px;
+
+  --font-main: 'Noto Sans KR', 'Malgun Gothic', '맑은 고딕', sans-serif;
+  --font-mono: 'Courier New', monospace;
+
+  --shadow-card: 0 1px 4px rgba(26,43,74,0.08);
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── 레이아웃 ── */
+.page-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+/* ── 상단 헤더 (네비게이션 바) ── */
+.site-header {
+  background: var(--navy);
+  color: #E8EDF5;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.site-header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  height: 52px;
+  gap: 16px;
+}
+
+.site-logo {
+  font-size: 13px;
+  font-weight: 700;
+  color: #E8EDF5;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.site-logo span {
+  color: var(--blue-light);
+}
+
+.header-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255,255,255,0.2);
+}
+
+.header-breadcrumb {
+  font-size: 12px;
+  color: rgba(232,237,245,0.7);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── 섹션 제목 영역 ── */
+.section-hero {
+  background: var(--navy);
+  color: #fff;
+  padding: 32px 20px 28px;
+  margin-bottom: 32px;
+}
+
+.section-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-hero .chapter-tag {
+  display: inline-block;
+  background: var(--blue);
+  color: #E8EDF8;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-hero h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.section-hero .section-subtitle {
+  font-size: 13px;
+  color: rgba(232,237,245,0.65);
+}
+
+/* ── 페이지 이동 버튼 ── */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 7px 14px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  border: 1px solid var(--border);
+  background: var(--bg-white);
+  color: var(--text-sub);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--blue-pale);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+}
+
+.btn-primary:hover {
+  background: var(--navy-mid);
+  border-color: var(--navy-mid);
+  color: #fff;
+}
+
+.btn-home {
+  background: var(--navy);
+  color: #E8EDF5;
+  border-color: var(--navy);
+}
+
+.btn-home:hover {
+  background: var(--navy-mid);
+  color: #fff;
+}
+
+.nav-spacer { flex: 1; }
+
+/* ── 내부 목차 ── */
+.toc-box {
+  background: var(--blue-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--blue);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  margin-bottom: 40px;
+}
+
+.toc-box h2 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.toc-list li a {
+  display: block;
+  font-size: 13px;
+  color: var(--text-sub);
+  text-decoration: none;
+  padding: 3px 0 3px 12px;
+  border-left: 2px solid transparent;
+  transition: border-color 0.1s, color 0.1s;
+}
+
+.toc-list li a:hover {
+  color: var(--blue);
+  border-left-color: var(--blue);
+}
+
+.toc-list li.sub a {
+  padding-left: 24px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ── 개념 지도 (코드블록 트리) ── */
+.concept-map {
+  background: var(--navy);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  margin-bottom: 32px;
+  overflow-x: auto;
+}
+
+.concept-map pre {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: #B8C8E0;
+  white-space: pre;
+}
+
+/* ── 섹션 구분선 ── */
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--border-light);
+  margin: 40px 0;
+}
+
+/* ── 소제목 스타일 ── */
+.content-area h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+  border-left: 4px solid var(--blue);
+  padding-left: 14px;
+  margin: 40px 0 16px;
+  line-height: 1.4;
+}
+
+.content-area h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-sub);
+  margin: 28px 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.content-area h3::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--blue);
+  flex-shrink: 0;
+}
+
+.content-area h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-sub);
+  margin: 20px 0 10px;
+}
+
+.content-area p {
+  font-size: 14px;
+  color: var(--text-sub);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.content-area ul, .content-area ol {
+  font-size: 14px;
+  color: var(--text-sub);
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.content-area li { margin-bottom: 4px; }
+
+/* ── 표 컬럼 너비 조정 ── */
+/* 4컬럼: 지표/개념/계산식/활용 — 개념에 더 많은 너비 */
+.table-col-4-wide-concept {
+  table-layout: auto;
+  width: 100%;
+}
+.table-col-4-wide-concept col.c-label  { width: 20%; }
+.table-col-4-wide-concept col.c-concept { width: 38%; }
+.table-col-4-wide-concept col.c-formula { width: 22%; }
+.table-col-4-wide-concept col.c-use    { width: 20%; }
+/* 지표 컬럼: 줄바꿈 허용, 긴 영문도 줄바꿈 */
+.table-col-4-wide-concept td:first-child,
+.table-col-4-wide-concept th:first-child {
+  white-space: normal;
+  word-break: break-word;
+  min-width: 0;
+}
+/* 나머지 컬럼: 일반 줄바꿈 */
+.table-col-4-wide-concept td,
+.table-col-4-wide-concept th {
+  white-space: normal;
+  word-break: keep-all;
+}
+
+/* ── 표 ── */
+.table-wrap {
+  overflow-x: auto;
+  margin: 16px 0 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+thead tr {
+  background: var(--navy);
+}
+
+thead th {
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+  color: #E8EDF5;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+tbody tr {
+  background: var(--bg-white);
+  border-bottom: 1px solid var(--border-light);
+  transition: background 0.1s;
+}
+
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: var(--blue-bg); }
+
+tbody td {
+  padding: 9px 14px;
+  color: var(--text-sub);
+  vertical-align: top;
+  line-height: 1.65;
+}
+
+tbody td:first-child {
+  font-weight: 600;
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+/* ── 인용문 박스 ── */
+.quote-box {
+  border-left: 4px solid var(--blue);
+  background: var(--blue-bg);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 14px 18px;
+  margin: 16px 0 24px;
+  font-size: 13px;
+  color: var(--text-sub);
+  line-height: 1.75;
+}
+
+/* 라벨은 클래스로 명시한 경우에만 표시 */
+.quote-box::before { display: none; }
+
+.quote-example::before {
+  content: '활용 예시';
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.quote-flow::before {
+  content: '흐름 정리';
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.quote-point::before {
+  content: '핵심 정리';
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+/* ── 핵심 키워드 카드 그리드 ── */
+.keyword-section {
+  margin: 32px 0 0;
+}
+
+.keyword-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--blue);
+  display: inline-block;
+}
+
+.keyword-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.keyword-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--blue);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.keyword-card:hover {
+  box-shadow: 0 3px 12px rgba(26,43,74,0.12);
+  transform: translateY(-1px);
+}
+
+.keyword-card .kw-term {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 6px;
+}
+
+.keyword-card .kw-desc {
+  font-size: 12px;
+  color: var(--text-sub);
+  line-height: 1.65;
+}
+
+/* ── 매트릭스 테이블 (BCG·SWOT 등) ── */
+.matrix-wrap {
+  margin: 16px 0 24px;
+}
+
+.matrix-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 4px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.matrix-table th {
+  background: var(--navy-mid);
+  color: #E8EDF5;
+  padding: 8px 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.matrix-table td {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  vertical-align: top;
+  background: var(--bg-white);
+  color: var(--text-sub);
+  line-height: 1.65;
+}
+
+.matrix-table td.row-header {
+  background: var(--blue-bg);
+  font-weight: 600;
+  color: var(--navy);
+  text-align: center;
+  white-space: nowrap;
+  width: 80px;
+}
+
+.matrix-table td.cell-highlight { background: #EEF3FB; }
+
+/* 매트릭스 셀 색상 클래스 */
+.cell-blue  { background: #EEF3FB !important; }
+.cell-light { background: #F4F6FA !important; }
+.cell-pale  { background: #E8EDF8 !important; }
+.cell-warn  { background: #FFF3F0 !important; color: #8B3A2A !important; font-weight: 600; }
+.cell-ok    { background: #EEF3FB !important; color: var(--navy) !important; font-weight: 600; }
+.cell-low   { background: #F9F9F7 !important; color: var(--text-muted) !important; font-weight: 600; }
+.cell-empty { background: #F4F6FA !important; }
+
+/* 매트릭스 셀 내 소제목/설명 */
+.cell-title { font-weight: 700; display: block; margin-bottom: 3px; }
+.cell-desc  { font-size: 12px; color: var(--text-muted); display: block; }
+
+/* ── 강조 박스 ── */
+.info-box {
+  background: var(--blue-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--blue);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 14px 18px;
+  margin: 16px 0 24px;
+  font-size: 13px;
+  color: var(--text-sub);
+  line-height: 1.75;
+}
+
+.info-box strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+/* ── 구분 태그 ── */
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 3px;
+  margin: 2px 3px 2px 0;
+  letter-spacing: 0.03em;
+}
+
+.tag-blue {
+  background: var(--blue-pale);
+  color: var(--blue);
+  border: 1px solid #B8CCE8;
+}
+
+.tag-navy {
+  background: var(--navy);
+  color: #E8EDF5;
+}
+
+/* ── 앵커 오프셋 (sticky 헤더 보정) ── */
+.anchor-target {
+  scroll-margin-top: 68px;
+}
+
+/* ── index.html 전용 ── */
+.index-hero {
+  background: var(--navy);
+  padding: 48px 20px 40px;
+  margin-bottom: 40px;
+}
+
+.index-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.index-hero h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.index-hero p {
+  font-size: 14px;
+  color: rgba(232,237,245,0.7);
+}
+
+.exam-badge {
+  display: inline-block;
+  background: var(--blue);
+  color: #E8EDF8;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.chapter-block {
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.chapter-block-header {
+  background: var(--navy-mid);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chapter-block-header .ch-num {
+  background: var(--blue-light);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 3px;
+  letter-spacing: 0.04em;
+}
+
+.chapter-block-header .ch-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #E8EDF5;
+}
+
+.section-list {
+  list-style: none;
+}
+
+.section-list li {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.section-list li:last-child { border-bottom: none; }
+
+.section-list a {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: var(--text-sub);
+  font-size: 14px;
+  gap: 12px;
+  transition: background 0.1s;
+}
+
+.section-list a:hover {
+  background: var(--blue-bg);
+  color: var(--blue);
+}
+
+.section-list .sec-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--blue);
+  background: var(--blue-pale);
+  border: 1px solid #B8CCE8;
+  padding: 2px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.section-list .sec-arrow {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.section-list a:hover .sec-arrow {
+  color: var(--blue);
+}
+
+/* ── Section 02 계층 그룹 (index.html) ── */
+.section-group-parent { border-bottom: 1px solid var(--border-light); }
+
+.section-group-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--blue-bg);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.section-sublist { list-style: none; }
+.section-sublist li { border-bottom: 1px solid var(--border-light); }
+.section-sublist li:last-child { border-bottom: none; }
+
+.section-sublist a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px 12px 36px;
+  text-decoration: none;
+  color: var(--text-sub);
+  font-size: 14px;
+  gap: 10px;
+  transition: background 0.1s;
+  position: relative;
+}
+
+.section-sublist a::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 1px;
+  background: var(--border);
+}
+
+.section-sublist a:hover { background: var(--blue-bg); color: var(--blue); }
+.section-sublist a:hover::before { background: var(--blue); }
+
+.sec-sub-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--blue);
+  background: var(--blue-pale);
+  border: 1px solid #B8CCE8;
+  padding: 2px 7px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+/* ── 트리형 목차 (B안: 개념지도 통합) ── */
+.toc-tree {
+  list-style: none;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.toc-tree > li { margin-bottom: 8px; }
+
+.toc-tree .toc-h1 > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  padding: 4px 0;
+  font-size: 13px;
+}
+
+.toc-tree .toc-h1 > a::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--blue);
+  flex-shrink: 0;
+}
+
+.toc-tree .toc-h1 > a:hover { color: var(--blue); }
+
+.toc-tree .toc-h1 > ul {
+  list-style: none;
+  margin: 2px 0 4px 18px;
+  border-left: 1.5px solid var(--border);
+  padding-left: 12px;
+}
+
+.toc-tree .toc-h2 > a {
+  display: block;
+  color: var(--text-sub);
+  text-decoration: none;
+  padding: 3px 0;
+  font-weight: 600;
+  font-size: 12.5px;
+}
+
+.toc-tree .toc-h2 > a:hover { color: var(--blue); }
+
+.toc-tree .toc-h2 > ul {
+  list-style: none;
+  margin: 1px 0 2px 14px;
+  border-left: 1px solid var(--border-light);
+  padding-left: 10px;
+}
+
+.toc-tree .toc-h3 a {
+  display: block;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 2px 0;
+  font-size: 12px;
+}
+
+.toc-tree .toc-h3 a:hover { color: var(--blue); }
+
+/* ── 인쇄 ── */
+@media print {
+  .site-header, .nav-buttons, .toc-box { display: none !important; }
+
+  body { background: #fff; font-size: 12px; }
+
+  .page-wrap { max-width: 100%; padding: 0; }
+
+  .section-hero {
+    background: #1A2B4A !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .content-area h2 {
+    page-break-after: avoid;
+    border-left-color: #2E5FAA;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .keyword-card, .table-wrap, .quote-box {
+    page-break-inside: avoid;
+  }
+
+  .keyword-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  thead tr {
+    background: #1A2B4A !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a { text-decoration: none; color: inherit; }
+}
+
+/* ── 반응형 ── */
+@media (max-width: 640px) {
+  .section-hero h1 { font-size: 18px; }
+  .content-area h2 { font-size: 16px; }
+  .keyword-grid { grid-template-columns: 1fr; }
+  .nav-buttons { gap: 8px; }
+  .btn { font-size: 11px; padding: 6px 11px; }
+  .toc-box { padding: 16px; }
+  .concept-map pre { font-size: 11px; }
+}
+
+@media (max-width: 400px) {
+  .site-header-inner { gap: 10px; }
+  .header-breadcrumb { display: none; }
+}

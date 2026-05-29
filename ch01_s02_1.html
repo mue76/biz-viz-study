@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch01 Section 02-1 기업 내부정보 파악 — 회계·재무·인적자원</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a href="index.html" class="site-logo">경영정보<span>시각화능력</span></a>
+    <div class="header-divider"></div>
+    <span class="header-breadcrumb">Ch01 경영정보 일반 &rsaquo; Section 02 기업 내부정보 파악 &rsaquo; 회계·재무·인적자원</span>
+  </div>
+</header>
+
+<div class="section-hero">
+  <div class="section-hero-inner">
+    <div class="chapter-tag">Chapter 01 · Section 02-1</div>
+    <h1>기업 내부정보 파악</h1>
+    <p class="section-subtitle">회계·재무·인적자원 기본정보</p>
+  </div>
+</div>
+
+<div class="page-wrap">
+
+  <nav class="nav-buttons">
+    <a href="index.html" class="btn btn-home">&#8962; 목차</a>
+    <a href="ch01_s01.html" class="btn">&lsaquo; Section 01</a>
+    <span class="nav-spacer"></span>
+    <a href="ch01_s02_2.html" class="btn btn-primary">Section 02-2 &rsaquo;</a>
+  </nav>
+
+  <!-- 트리형 목차 -->
+  <div class="toc-box">
+    <h2>이 섹션의 목차</h2>
+    <ul class="toc-tree">
+      <li class="toc-h1"><a href="#s1">1) 회계·재무</a>
+        <ul>
+          <li class="toc-h2"><a href="#s1-1">(1) 회계</a>
+            <ul>
+              <li class="toc-h3"><a href="#s1-1">회계의 구분 (재무회계 / 관리회계 / 세무회계)</a></li>
+              <li class="toc-h3"><a href="#s1-1">회계기준 (K-IFRS)</a></li>
+              <li class="toc-h3"><a href="#s1-1">회계활동 장부 (분개장 → 시산표 → 정산표 → 재무제표)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s1-2">(2) 재무제표</a>
+            <ul>
+              <li class="toc-h3"><a href="#s1-2a">재무상태표 (자산 = 부채 + 자본)</a></li>
+              <li class="toc-h3"><a href="#s1-2b">손익계산서 (수익 - 비용 = 순이익)</a></li>
+              <li class="toc-h3"><a href="#s1-2c">현금흐름표 (영업 / 투자 / 재무활동)</a></li>
+              <li class="toc-h3"><a href="#s1-2d">자본변동표 (자본금 / 자본잉여금 / 자본조정 / 기타포괄손익 / 이익잉여금)</a></li>
+              <li class="toc-h3"><a href="#s1-2e">재무제표 간 상호연관성</a></li>
+              <li class="toc-h3"><a href="#s1-2f">재무제표 작성원칙 (신뢰성 / 명료성 / 충분성 / 중요성 / 발생주의 / 수익비용대응)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s1-3">(3) 재무비율</a>
+            <ul>
+              <li class="toc-h3"><a href="#s1-3a">안정성 비율 (유동비율 / 당좌비율 / 부채비율 / 이자보상비율)</a></li>
+              <li class="toc-h3"><a href="#s1-3b">수익성 비율 (ROE / ROA / 매출액순이익률 / ROI) + 듀퐁항등식</a></li>
+              <li class="toc-h3"><a href="#s1-3c">활동성 비율 (재고자산회전율 / 유형자산회전율 / 매출채권회전율)</a></li>
+              <li class="toc-h3"><a href="#s1-3d">성장성 비율 (총자산증가율 / 자기자본증가율 / 매출액증가율)</a></li>
+              <li class="toc-h3"><a href="#s1-3e">생산성 비율 (노동생산성 / 자본생산성)</a></li>
+              <li class="toc-h3"><a href="#s1-3f">시장가치 비율 (EPS / PER / PBR / PCR / PSR)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s1-4">(4) 재고자산의 회계처리</a>
+            <ul>
+              <li class="toc-h3"><a href="#s1-4a">재고자산 종류 (상품 / 제품 / 반제품 / 원재료)</a></li>
+              <li class="toc-h3"><a href="#s1-4b">판매단가 결정 (개별법 / 선입선출법 / 후입선출법 / 평균법)</a></li>
+              <li class="toc-h3"><a href="#s1-4c">감가상각 (정액법 / 정률법 / 생산량비례법 / 연수합계법)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s1-5">(5) 투자</a>
+            <ul>
+              <li class="toc-h3"><a href="#s1-5a">채권투자 (종류 / 가격결정 / 화폐시간가치 / 수익률 / 위험)</a></li>
+              <li class="toc-h3"><a href="#s1-5b">옵션 (콜옵션 / 풋옵션 / 내재가치 / 시간가치 / ITM·ATM·OTM)</a></li>
+              <li class="toc-h3"><a href="#s1-5c">투자대안 가치평가 (회수기간법 / NPV법 / IRR법)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="toc-h1"><a href="#s2">2) 인적자원</a>
+        <ul>
+          <li class="toc-h2"><a href="#s2-1">(1) 인사·조직 전략</a>
+            <ul>
+              <li class="toc-h3"><a href="#s2-1a">① 인사기획 (인사전략 수립 / 인력 운영 계획)</a></li>
+              <li class="toc-h3"><a href="#s2-1b">② 직무분석 (절차·방법·결과물 / 직무평가)</a></li>
+              <li class="toc-h3"><a href="#s2-1c">③ 성과관리 (MBO / SMART / BSC / KPI / OKR)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s2-2">(2) 인적자원관리</a>
+            <ul>
+              <li class="toc-h3"><a href="#s2-2a">① 채용과 배치</a></li>
+              <li class="toc-h3"><a href="#s2-2b">② 평가 (서열법 / 강제할당법 / BARS / BOS / 평가센터법 / 다면평가법)</a></li>
+              <li class="toc-h3"><a href="#s2-2c">③ 보상 (임금 / 복리후생 / 카페테리아 / EAP)</a></li>
+              <li class="toc-h3"><a href="#s2-2d">④ 퇴직 (퇴직관리 / 전직지원)</a></li>
+            </ul>
+          </li>
+          <li class="toc-h2"><a href="#s2-3">(3) 인적자원개발 및 조직개발</a>
+            <ul>
+              <li class="toc-h3"><a href="#s2-3a">① 교육</a></li>
+              <li class="toc-h3"><a href="#s2-3b">② 경력개발 (리스킬링 / 업스킬링 / 이중경력제도)</a></li>
+              <li class="toc-h3"><a href="#s2-3c">③ 조직개발</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="toc-h1"><a href="#keywords">✅ 핵심 키워드</a></li>
+    </ul>
+  </div>
+
+  <div class="content-area">
+
+    <!-- 1) 회계·재무 -->
+    <h2 id="s1" class="anchor-target">1) 회계·재무</h2>
+
+    <h3 id="s1-1" class="anchor-target">(1) 회계</h3>
+    <h4>① 회계의 개념</h4>
+    <p>기업의 행위를 재무적 가치로 측정하여 표준화된 기준으로 정리하는 것. 기업의 재무상태와 경영실적을 이해관계자에게 알리고, 의사결정에 필요한 정보를 축적하는 경영활동이다.</p>
+
+    <h4>회계의 구분</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>구분</th><th>목적</th></tr></thead>
+        <tbody>
+          <tr><td>재무회계</td><td>외부 이해관계자 보고 목적</td></tr>
+          <tr><td>관리회계</td><td>내부 관리 목적</td></tr>
+          <tr><td>세무회계</td><td>정부 및 조세당국을 위한 목적</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>회계기준</strong> : 보고서를 작성하고 해석하는 기준인 K-IFRS는 법률에 의해 강제적·의무적으로 규정.</p>
+
+    <h4>회계활동 장부</h4>
+    <p>회계활동은 회계기간 중 이루어지는 거래 기록과 회계기간 말의 결산 활동으로 구분된다.</p>
+    <div class="quote-box quote-flow">거래 발생 → <strong>분개장</strong> 기록 → <strong>시산표</strong>로 차변·대변 확인 → <strong>정산표</strong>로 결산 정리 → <strong>재무제표</strong> 작성</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>장부</th><th>역할</th></tr></thead>
+        <tbody>
+          <tr><td>분개장</td><td>발생 순서에 따라 거래 내용을 기록하는 장부</td></tr>
+          <tr><td>시산표</td><td>차변의 합과 대변의 합의 일치 여부를 확인하는 일람표</td></tr>
+          <tr><td>정산표</td><td>분개 결과를 결산이 용이한 서식으로 정리</td></tr>
+          <tr><td>재무제표</td><td>재무상태표, 손익계산서 등 결산보고서</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="section-divider">
+
+    <h3 id="s1-2" class="anchor-target">(2) 재무제표</h3>
+    <p><strong>재무제표</strong> : 기업의 경영활동에 따른 재무상태를 일반적으로 인정된 회계원칙(GAAP, Generally Accepted Accounting Principles)에 따라 보여주는 회계보고서. 재무상태표·손익계산서·현금흐름표·자본변동표·주석으로 구성.</p>
+
+    <h4 id="s1-2a" class="anchor-target">재무상태표</h4>
+    <p>대차대조표라고도 하며, <strong>일정 시점</strong>에서의 기업의 자산·부채·자본 상태를 나타낸 보고서. 2011년 새로운 회계기준 도입으로 명칭이 '대차대조표'에서 '재무상태표'로 변경.</p>
+    <ul>
+      <li>차변(왼편)에는 자산, 대변(오른편)에는 부채와 자본 기재</li>
+      <li>복식부기 원칙 : 모든 거래는 대차 양변에 기록 → 양변 합계는 항상 일치</li>
+    </ul>
+    <div class="info-box"><strong>자산 = 부채 + (자기)자본</strong></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>항목</th><th>세부 내용</th></tr></thead>
+        <tbody>
+          <tr><td>자산</td><td>유동자산(당좌자산, 재고자산), 비유동자산(유형자산, 무형자산, 투자자산, 기타)</td></tr>
+          <tr><td>부채</td><td>유동부채(미지급비용, 단기금융부채), 비유동부채(장기금융부채)</td></tr>
+          <tr><td>자본</td><td>자본금(보통주자본금, 우선주자본금), 이익잉여금</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">가계로 비유하면 — 자산은 내가 가진 것(집, 차, 예금), 부채는 빌린 것(주택담보대출, 카드빚), 자본은 실제 내 것(자산 - 부채)이다.</div>
+
+    <h4 id="s1-2b" class="anchor-target">손익계산서</h4>
+    <p>기업이 <strong>일정 기간</strong> 동안 영업활동을 통해 얻은 수익과 비용을 계산하여 순이익(또는 손실)을 보여주는 보고서. 재무상태표는 "지금 남아 있는 것"을 보고, 손익계산서는 "기간 동안 벌고 쓴 것"을 본다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>항목</th><th>세부 내용</th></tr></thead>
+        <tbody>
+          <tr><td>수익</td><td>매출액, 영업외수익 등</td></tr>
+          <tr><td>비용</td><td>매출원가, 판매비, 관리비, 영업외비용, 법인세비용 등</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="s1-2c" class="anchor-target">현금흐름표</h4>
+    <p>일정 기간의 기업 현금 유입과 유출 내역을 나타내는 보고서. 재무건전성 평가에 중요한 역할 — 유량(flow) 개념.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>구분</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>영업활동</td><td>제품·용역의 생산·판매와 관련된 활동</td></tr>
+          <tr><td>투자활동</td><td>토지·건물·기계 등 자산의 취득·처분 활동</td></tr>
+          <tr><td>재무활동</td><td>자본 및 부채의 구성, 자금 조달·상환 활동</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>현금흐름을 수반하지 않는 거래(감가상각비, 대손상각비 등)는 당기순이익에서 조정하여 영업활동 현금흐름 계산.</p>
+    <div class="quote-box quote-example">장부상 이익이 나고 있어도 거래처에서 돈을 늦게 받으면 실제 현금이 부족해질 수 있다. 이처럼 손익계산서만으로는 파악할 수 없는 실제 현금 흐름을 확인하기 위해 현금흐름표가 필요하다. 이익이 나는데도 현금 부족으로 부도가 나는 것을 흑자도산이라 한다.</div>
+
+    <h4 id="s1-2d" class="anchor-target">자본변동표</h4>
+    <p>일정 기간의 자본 변동에 관한 정보를 제공하는 보고서. 재무제표 간 연계성 제고, 이해 가능성 제고.</p>
+    <h4>자본변동표에 표시되는 자본의 구성</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>구분</th><th>세부항목</th><th>설명</th></tr></thead>
+        <tbody>
+          <tr><td>자본금</td><td>보통주자본금, 우선주자본금</td><td>유상증자·무상증자·주식배당 등으로 변동</td></tr>
+          <tr><td>자본잉여금</td><td>주식발행초과금, 기타자본잉여금 등</td><td>유상증자·무상증자 등에 의해 발생</td></tr>
+          <tr><td>자본조정</td><td>자기주식, 주식할인발행차금 등</td><td>자본 전체를 감소시키는 항목</td></tr>
+          <tr><td>기타포괄손익누계액</td><td>매도가능증권평가손익, 해외사업환산손익 등</td><td>당기손익으로 분류하기 어려운 항목의 변동</td></tr>
+          <tr><td>이익잉여금</td><td>법정적립금(이익준비금 등), 임의적립금, 미처분이익잉여금 등</td><td>이익 중 배당하지 않고 내부에 유보한 잉여금</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">자본변동표는 "회사의 자본이 한 기간 동안 왜 늘고 줄었는지"를 보여주는 표다. 유상증자·무상증자·주식배당 등으로 자본금이나 자본잉여금이 변할 수 있고, 자기주식 취득으로 자본조정이 생기며, 이익을 배당하지 않고 남기면 이익잉여금이 늘어난다.</div>
+
+    <h4>주요 용어</h4>
+    <ul>
+      <li><strong>유상증자(감자)</strong> : 기업이 주식 수를 늘(줄)일 때 추가로 돈을 내(받)는 경우</li>
+      <li><strong>무상증자(감자)</strong> : 기업이 주식 수를 늘(줄)일 때 추가로 돈을 내(받)지 않는 경우</li>
+      <li><strong>보통주</strong> : 특별한 권리 내용이 정해지지 않은 일반 주식</li>
+      <li><strong>우선주</strong> : 배당이나 잔여재산 분배 시 보통주에 우선하는 권리가 정해진 주식</li>
+    </ul>
+
+    <h4 id="s1-2e" class="anchor-target">재무제표 간 상호연관성</h4>
+    <p>각 재무제표는 동일한 거래나 사건의 다른 측면을 반영하므로 상호 보완적 관계에 있다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>재무제표</th><th>시간 개념</th><th>핵심 질문</th></tr></thead>
+        <tbody>
+          <tr><td>재무상태표</td><td>특정 시점</td><td>지금 이 회사는 무엇을 가지고 있고, 얼마를 빚졌는가?</td></tr>
+          <tr><td>손익계산서</td><td>일정 기간</td><td>이 기간 동안 얼마를 벌고 얼마를 썼는가?</td></tr>
+          <tr><td>현금흐름표</td><td>일정 기간</td><td>실제 현금이 어떻게 들어오고 나갔는가?</td></tr>
+          <tr><td>자본변동표</td><td>일정 기간</td><td>자본은 어떻게 변동했는가?</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="s1-2f" class="anchor-target">② 재무제표 작성원칙</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>원칙</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>신뢰성</td><td>객관적 자료와 증거에 의해 공정하게 보고</td></tr>
+          <tr><td>명료성</td><td>이해하기 쉽도록 간단명료하게 표시</td></tr>
+          <tr><td>충분성</td><td>회계처리기준·과목·금액을 충분히 표시</td></tr>
+          <tr><td>중요성</td><td>오해를 줄 가능성이 없는 내용은 중요성에 따라 예외 처리 가능</td></tr>
+          <tr><td>발생주의</td><td>수익과 비용은 발생한 기간에 정당하게 배분</td></tr>
+          <tr><td>수익비용대응</td><td>수익항목과 관련 비용항목을 명확히 분류·대응하여 작성</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="section-divider">
+
+    <h3 id="s1-3" class="anchor-target">(3) 재무비율</h3>
+    <h4>① 재무비율의 목적</h4>
+    <ul>
+      <li>기업 재무제표의 특정 항목을 표준화·상대화하여 타 기업과 비교함으로써 기업 현황 및 성과 파악</li>
+      <li>계정과목을 상호 비교하여 기업 간 안정성·수익성 등을 분석하고 재무적 건전성 추정</li>
+    </ul>
+    <h4>② 재무비율의 종류</h4>
+    <p>재무상태표·손익계산서의 항목(계정과목)을 서로 나누거나 비교해서 만든다. 계정과목이란 각 재무제표에 기록되는 항목의 이름으로, "매출액", "순이익", "유동자산", "부채" 등이 해당한다. 어떤 재무제표의 항목을 사용했는지에 따라 구분한다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>구분</th><th>분석 목적</th><th>대표 지표</th></tr></thead>
+        <tbody>
+          <tr><td>안정성 비율</td><td>채무지급능력 분석</td><td>유동비율, 부채비율 등</td></tr>
+          <tr><td>수익성 비율</td><td>매출액 또는 투자에 대한 이익 비율 분석</td><td>ROE, ROA 등</td></tr>
+          <tr><td>활동성 비율</td><td>총자산의 활용도 분석</td><td>재고자산회전율 등</td></tr>
+          <tr><td>성장성 비율</td><td>기업 규모 및 수익의 성장성 분석</td><td>매출액증가율 등</td></tr>
+          <tr><td>생산성 비율</td><td>인적·물적 자원의 투입 효율성 분석</td><td>자본생산성 등</td></tr>
+          <tr><td>시장가치 비율</td><td>주식가격과 재무제표 항목 비교 분석</td><td>PER, PBR 등</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="s1-3a" class="anchor-target">안정성 비율</h4>
+    <p>부채(타인자본) 의존도와 채무상환능력을 측정.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>공식</th><th>직관적 의미</th><th>판단 포인트</th></tr></thead>
+        <tbody>
+          <tr><td>유동비율</td><td>유동자산 ÷ 유동부채</td><td>단기 빚을 갚을 현금 여력이 있는가</td><td>높을수록 우수. 통상 200% 이상 이상적</td></tr>
+          <tr><td>당좌비율</td><td>당좌자산 ÷ 유동부채</td><td>재고 없이도 단기 빚을 갚을 수 있는가</td><td>100% 이상 우수, 50% 이하 위험</td></tr>
+          <tr><td>부채비율</td><td>타인자본 ÷ 자기자본</td><td>내 돈 대비 빌린 돈이 얼마나 많은가</td><td>높을수록 재무위험 증가</td></tr>
+          <tr><td>이자보상비율</td><td>영업이익 ÷ 이자비용</td><td>영업이익으로 이자를 얼마나 감당할 수 있는가</td><td>1.5 이상 충분, 1 미만 잠재적 부실</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li><strong>유동자산</strong> : 1년 이내에 현금화되거나 사용될 것으로 예상되는 자산 (현금, 단기금융상품, 미수채권 등)</li>
+      <li><strong>유동부채</strong> : 1년 이내에 상환해야 하는 채무 (외상매입금, 단기차입금, 미지급금 등)</li>
+      <li><strong>당좌자산</strong> : 현금, 예금, 매출채권, 유가증권 등 (재고자산 제외)</li>
+    </ul>
+    <div class="quote-box quote-example">유동비율과 당좌비율의 차이 : 유동비율은 재고자산을 포함하지만, 당좌비율은 재고자산을 제외한다. 재고자산은 팔려야 현금이 되므로 당좌비율이 더 엄격한 단기 지급능력 지표다.</div>
+    <div class="quote-box quote-example">카페를 운영한다고 가정하자. 이번 달 갚아야 할 단기 빚이 100만원인데, 현금·재료재고 등 유동자산이 250만원이라면 유동비율은 250%로 양호하다. 그런데 재료재고(팔려야 현금이 되는 것)를 빼면 당좌자산이 80만원밖에 없다면 당좌비율은 80%로, 단기 지급능력이 생각보다 빠듯한 상황이다.</div>
+
+    <h4 id="s1-3b" class="anchor-target">수익성 비율</h4>
+    <p>기업의 이익창출능력을 분석.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>공식</th><th>직관적 의미</th><th>판단 포인트</th></tr></thead>
+        <tbody>
+          <tr><td>자기자본이익률(ROE, Return on Equity)</td><td>순이익 ÷ 자기자본</td><td>주주 돈으로 얼마나 벌었는가</td><td>시중금리보다 높아야 투자 가치. 부채 많으면 부풀려질 수 있어 주의</td></tr>
+          <tr><td>총자산이익률(ROA, Return on Assets)</td><td>당기순이익 ÷ 총자산</td><td>회사 전체 자산으로 얼마나 벌었는가</td><td>ROE와 함께 봐야 레버리지 효과 구분 가능</td></tr>
+          <tr><td>매출액순이익률</td><td>당기순이익 ÷ 매출액</td><td>매출 100원 중 실제 이익이 얼마인가</td><td>통상 10% 이상 양호. 업종별 비교 필수</td></tr>
+          <tr><td>투자자본수익률(ROI, Return on Investment)</td><td>당기순이익 ÷ 투자금액</td><td>투자한 돈 대비 얼마나 벌었는가</td><td>높을수록 효과적. 기간·내재위험 미반영 한계</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h4>듀퐁항등식(DuPont Identity)</h4>
+    <p>ROE를 3가지 구성 요소로 분해하여 수익성의 원천을 분석.</p>
+    <div class="info-box">
+      ROE = 매출이익률 × 총자산회전율 × 자기자본승수<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (순이익 ÷ 매출액) × (매출액 ÷ 자산) × (자산 ÷ 자본)
+    </div>
+    <p>영업효율성(매출이익률), 자산 활용 효율성(총자산회전율), 재무레버리지(자기자본승수)로 분해. 이해관계자에게 기업 성과와 효율성에 관한 세부 정보 제공.</p>
+    <div class="quote-box quote-example">A회사는 자기자본 100억으로 사업을 해서 순이익 10억을 냈다. ROE = 10%, ROA = 10%다. B회사는 자기자본 30억에 차입금 70억을 더해 총자산 100억으로 사업을 해서 똑같이 순이익 10억을 냈다. ROA는 10%로 같지만, ROE = 10억 ÷ 30억 = <strong>33.3%</strong>로 훨씬 높다. ROE만 보면 B회사가 훨씬 우수해 보이지만, 사실은 부채를 많이 쓴 결과다. ROE와 ROA, 부채비율을 함께 봐야 하는 이유다.</div>
+
+    <h4 id="s1-3c" class="anchor-target">활동성 비율</h4>
+    <p>기업이 소유한 자산을 얼마나 효율적으로 이용하는가를 측정. 통상 매출액을 각종 자산항목으로 나누어 산출.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>공식</th><th>직관적 의미</th><th>판단 포인트</th></tr></thead>
+        <tbody>
+          <tr><td>재고자산회전율</td><td>매출액 ÷ 재고자산 (또는 매출원가 ÷ 재고자산)</td><td>재고가 얼마나 빨리 팔리는가</td><td>높을수록 재고 회전 빠름. 지나치게 높으면 생산·판매 지장</td></tr>
+          <tr><td>유형자산회전율</td><td>매출액 ÷ 유형자산</td><td>건물·기계 등 자산을 효율적으로 쓰는가</td><td>높을수록 활용도 양호. 낮으면 과잉투자 가능성</td></tr>
+          <tr><td>매출채권회전율</td><td>매출액 ÷ 매출채권</td><td>외상 대금이 얼마나 빨리 회수되는가</td><td>높을수록 현금화 속도 빠름</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="s1-3d" class="anchor-target">성장성 비율</h4>
+    <p>기업활동의 성과가 전년도 대비 얼마나 증가했는지를 보여주는 지표.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>공식</th><th>직관적 의미</th><th>판단 포인트</th></tr></thead>
+        <tbody>
+          <tr><td>총자산증가율</td><td>당기말 총자산 ÷ 전기말 총자산</td><td>회사 전체 규모가 얼마나 커졌는가</td><td>외형 성장 측정. 자산재평가·부채 증가로 높아지는 경우 주의</td></tr>
+          <tr><td>자기자본증가율</td><td>당기말 자기자본 ÷ 전기말 자기자본</td><td>자기 돈(순자산)이 얼마나 늘었는가</td><td>배당 없을 경우 ROE와 동일하게 측정</td></tr>
+          <tr><td>매출액증가율</td><td>당기말 매출액 ÷ 전기말 매출액</td><td>매출이 전년 대비 얼마나 늘었는가</td><td>기업 성장률 판단의 대표 비율</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="s1-3e" class="anchor-target">생산성 비율</h4>
+    <p>기업활동의 성과 효율을 측정하여 개별 생산요소의 기여도를 평가.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>공식</th><th>직관적 의미</th><th>판단 포인트</th></tr></thead>
+        <tbody>
+          <tr><td>노동생산성</td><td>부가가치 ÷ 종업원 수</td><td>직원 1명이 만들어내는 부가가치</td><td>높을수록 같은 인력으로 더 많은 가치 창출</td></tr>
+          <tr><td>자본생산성</td><td>부가가치 ÷ 총자본</td><td>투입한 자본이 만들어내는 부가가치</td><td>높을수록 자본 활용 효율이 높음</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="s1-3f" class="anchor-target">시장가치 비율</h4>
+    <p>기업의 재무성과와 경영상태를 주식시장에서 어떻게 평가하는지 측정.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>지표</th><th>공식</th><th>직관적 의미</th><th>판단 포인트</th></tr></thead>
+        <tbody>
+          <tr><td>주당순이익(EPS, Earning per Share)</td><td>당기순이익 ÷ 발행총주식수</td><td>주식 1주가 1년간 벌어들인 순이익</td><td>높을수록 투자가치 높음</td></tr>
+          <tr><td>주가수익비율(PER, Price Earning Ratio)</td><td>주가 ÷ 주당이익</td><td>주가가 연간 이익의 몇 배인가</td><td>높으면 수익 대비 주가 고평가, 낮으면 저평가 가능</td></tr>
+          <tr><td>주가순자산비율(PBR, Price Book Value Ratio)</td><td>주가 ÷ 주당장부가치</td><td>주가가 장부상 순자산의 몇 배인가</td><td>낮을수록 저평가. PBR = PER × ROE</td></tr>
+          <tr><td>주가현금흐름비율(PCR, Price Cashflow Ratio)</td><td>주가 ÷ 영업현금흐름</td><td>주가가 실제 현금흐름의 몇 배인가</td><td>PER의 한계(회계 이익) 보완</td></tr>
+          <tr><td>주가매출액비율(PSR, Price Selling Ratio)</td><td>주가 ÷ 매출액</td><td>주가가 매출액의 몇 배인가</td><td>낮을수록 저평가. 적자 신생기업 평가에 활용</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">PER은 "이익 대비 주가가 몇 배인가", PBR은 "순자산 대비 주가가 몇 배인가"를 보는 지표다. PER이 수익성 관점이라면 PBR은 재무건전성 관점이다.</div>
+    <div class="quote-box quote-example">주가 10만원, 주당이익 5,000원이면 PER = 20배. "이 주식의 주가는 연간 이익의 20배 수준"이라는 의미로, PER이 높을수록 수익 대비 주가가 높게 형성된 것이고, 낮으면 저평가 가능성이 있다.</div>
+
+    <hr class="section-divider">
+
+    <h3 id="s1-4" class="anchor-target">(4) 재고자산의 회계처리</h3>
+    <h4 id="s1-4a" class="anchor-target">① 재고자산</h4>
+    <p><strong>재고자산</strong> : 기업이 주된 영업활동을 위해 판매를 목적으로 보유하고 있는 자산.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>종류</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>상품</td><td>판매를 목적으로 구입한 경우</td></tr>
+          <tr><td>제품</td><td>제조한 경우</td></tr>
+          <tr><td>반제품</td><td>제조과정 중 하나 이상의 공정에서 다음 공정으로 넘어갈 완성품으로, 저장 가능하고 판매 가능한 제품</td></tr>
+          <tr><td>원재료</td><td>제조를 위한 재료</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>매입원가</strong> : 매입가액에 운임·보험료 등 취득 부대비용을 가산하여 기록.</p>
+
+    <h4 id="s1-4b" class="anchor-target">판매단가 결정 방법</h4>
+    <p>매입원가가 다른 경우 아래 4가지 방법 중 선택.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>방법</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>개별법</td><td>각 재고자산을 개별적으로 식별·기록하여 가격 결정</td></tr>
+          <tr><td>선입선출법</td><td>먼저 매입한 상품이 먼저 판매된다고 가정</td></tr>
+          <tr><td>후입선출법</td><td>가장 최근에 매입된 상품이 먼저 판매된다고 가정</td></tr>
+          <tr><td>평균법</td><td>일정 기간의 매입합계액을 매입수량으로 나누어 평균단가 산출</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">편의점에서 같은 음료를 100원, 120원에 두 번 구입했을 때 — 선입선출법은 먼저 산 100원짜리가 먼저 팔렸다고 보고, 후입선출법은 나중에 산 120원짜리가 먼저 팔렸다고 본다. 물가가 오르는 상황에서 두 방법은 재고자산 가치와 이익 계산에 차이를 만든다.</div>
+
+    <h4 id="s1-4c" class="anchor-target">② 감가상각 회계처리</h4>
+    <p>대부분의 유형자산은 시간이 지남에 따라 가치가 감소하므로, 취득원가를 내용연수에 걸쳐 적절히 배분하는 회계처리 방법.</p>
+    <ul>
+      <li><strong>취득원가</strong> : 자산을 취득하기 위해 지불한 금액</li>
+      <li><strong>내용연수</strong> : 자산을 이용할 수 있는 기간</li>
+      <li><strong>잔존가액</strong> : 내용연수 종료 후 남은 자산가치</li>
+    </ul>
+    <div class="quote-box quote-example">300만원짜리 노트북을 구입했다. 5년 후 중고가가 30만원이라면 — 취득원가 300만원, 내용연수 5년, 잔존가액 30만원. 매년 얼마씩 비용으로 인식할지를 정하는 것이 감가상각이다.</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>방법</th><th>공식</th><th>특징</th></tr></thead>
+        <tbody>
+          <tr><td>정액법(직선법)</td><td>(취득원가 − 잔존가치) ÷ 내용연수</td><td>매기 동일한 금액 상각. 단순하고 이해하기 쉬움</td></tr>
+          <tr><td>정률법</td><td>기초 장부금액 × 상각률</td><td>매기 일정 비율로 상각. 초기에 상각액이 크고 후기로 갈수록 감소</td></tr>
+          <tr><td>생산량비례법</td><td>(취득원가 − 잔존가치) × (당기 생산량 ÷ 총생산량)</td><td>실제 생산량에 비례하여 상각. 광물자원 채굴 등에 활용</td></tr>
+          <tr><td>연수합계법</td><td>(취득원가 − 잔존가치) × (당기초 잔존내용연수 ÷ 내용연수합계)</td><td>잔존 내용연수 비례로 상각. 초기 상각액이 큰 가속상각법</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">300만원 노트북(잔존가액 30만원, 내용연수 5년) 기준 비교 — 정액법은 매년 (300-30)÷5 = <strong>54만원</strong>씩 균등 상각. 정률법은 첫해 장부금액 300만원의 일정 비율(예: 40%)을 상각하면 첫해 <strong>120만원</strong>, 다음해 (300-120)×40% = <strong>72만원</strong>으로 초기에 더 많이 상각된다. 자동차·IT 장비처럼 초기에 가치 하락이 빠른 자산에는 정률법이 적합하다.</div>
+
+    <hr class="section-divider">
+
+    <h3 id="s1-5" class="anchor-target">(5) 투자</h3>
+
+    <h4 id="s1-5a" class="anchor-target">① 채권투자</h4>
+    <p><strong>채권</strong> : 정부·공공기관·주식회사 등이 불특정 다수로부터 자금을 조달할 목적으로 차입금액과 이자를 정해진 일자에 상환하기로 약속한 유가증권.</p>
+    <p>만기까지 보유하면 발행 당시 약정된 이자와 원금을 받을 수 있는 구조이나, 만기 전 시장에서 매매할 경우 시장금리 변화에 따라 이익이나 손실이 발생할 수 있다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>특성</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>수익성</td><td>이자소득(약정 이율) + 자본소득(가격 변동)</td></tr>
+          <tr><td>안정성</td><td>정부·공공기관·금융기관 등이 발행하여 안정성 높음</td></tr>
+          <tr><td>유동성</td><td>만기 전 금융회사를 통해 현금화 가능</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>발행주체, 이자지급방법, 상환기간, 상환방법, 모집방법, 보증유무, 발행가액, 표시통화 등에 따라 구분. 주요 분류는 아래와 같다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>분류 기준</th><th>종류</th></tr></thead>
+        <tbody>
+          <tr><td>발행주체</td><td>국고채(국가), 지방채(지방정부), 특수채(특별법 기관), 금융채(금융회사), 회사채(주식회사)</td></tr>
+          <tr><td>이자지급방법</td><td>단리채, 복리채, 할인채, 이표채</td></tr>
+          <tr><td>상환기간</td><td>단기채(1년 이하), 중기채(1년 초과~5년), 장기채(5년 초과)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>채권의 가격결정</h4>
+    <p>채권가격과 채권수익률 간에는 <strong>역관계</strong>가 존재한다.</p>
+    <p>채권을 사면 미래에 <strong>이자</strong>와 <strong>액면가(원금)</strong> 두 가지를 받는다. 화폐의 시간가치에 따라 미래의 돈은 현재보다 가치가 작으므로, 채권가격은 이 둘을 현재가치로 환산해 합친 것이다.</p>
+    <div class="info-box">채권가격 = 이자 ÷ (1 + 수익률) + 액면가 ÷ (1 + 수익률)</div>
+    <p>미래 현금흐름(이자 + 액면가)을 투자자가 기대하는 할인율로 할인한 현재가치의 합.</p>
+    <h4>숫자로 보는 금리-채권가격 역관계</h4>
+    <p>액면가 100만원, 연 이자 5만원(이자율 5%) 채권 가정.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>시중 수익률</th><th>계산</th><th>채권가격</th><th>해석</th></tr></thead>
+        <tbody>
+          <tr><td>5% (발행 당시와 동일)</td><td>5만 ÷ 1.05 + 100만 ÷ 1.05</td><td>100만원</td><td>액면가와 동일</td></tr>
+          <tr><td>10% (금리 상승)</td><td>5만 ÷ 1.10 + 100만 ÷ 1.10</td><td>약 95.5만원</td><td>액면가보다 낮아짐</td></tr>
+          <tr><td>2% (금리 하락)</td><td>5만 ÷ 1.02 + 100만 ÷ 1.02</td><td>약 102.9만원</td><td>액면가보다 높아짐</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>금리가 오를수록 나누는 수(1 + 수익률)가 커지기 때문에 채권가격은 낮아진다. 채권의 이자율은 발행 시 고정되어 있어, 시중금리가 올라도 이미 발행된 채권의 이자는 변하지 않기 때문이다.</p>
+    <div class="quote-box quote-point">채권가격 하락이 곧 만기 원금 손실을 의미하지는 않는다.</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>상황</th><th>의미</th></tr></thead>
+        <tbody>
+          <tr><td>만기까지 보유</td><td>발행기관이 부도나지 않는 한 약속된 원금과 이자 수령</td></tr>
+          <tr><td>만기 전 중간 매도</td><td>시장금리 상승 시 채권가격이 낮아져 있으므로 100만원보다 낮은 가격에 팔아야 할 수 있음</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>화폐의 시간가치</h4>
+    <p>현재의 1원이 미래의 1원보다 가치가 크다는 개념.</p>
+    <p><strong>화폐의 시간가치</strong> : 현재의 1원이 미래의 1원보다 가치가 크다는 개념.</p>
+    <div class="quote-box quote-example">지금 받는 100만원과 1년 후 받는 100만원 중 어느 쪽이 더 가치 있을까? 지금 받으면 은행에 넣어 이자를 받을 수 있고, 물가가 오르면 1년 후 100만원의 실질 가치는 줄어든다. 그래서 현재의 돈이 미래의 같은 금액보다 가치가 크다.</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>개념</th><th>공식</th><th>의미</th></tr></thead>
+        <tbody>
+          <tr><td>미래가치</td><td>현재가치 × (1 + 이자율) ※ 1기간 기준</td><td>현재 돈을 미래 시점 가치로 환산</td></tr>
+          <tr><td>현재가치</td><td>미래가치 ÷ (1 + 이자율) ※ 1기간 기준</td><td>미래 돈을 현재 시점 가치로 환산</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>채권수익률의 종류</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>종류</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>표면이율</td><td>채권 액면에 기재된 이율 (1년간 지급 이자 ÷ 액면)</td></tr>
+          <tr><td>만기수익률</td><td>만기까지 보유할 경우 실현되는 예상수익률</td></tr>
+          <tr><td>실효수익률</td><td>연단위 복리 기준으로 산출한 이론적 수익률</td></tr>
+          <tr><td>연평균수익률</td><td>만기가치를 현재가격으로 나누어 연단위 단리수익률로 도출</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">액면가 100만원, 표면이율 5% 채권을 95만원에 샀다고 하자. 매년 받는 이자는 표면이율 기준 5만원이지만, 내가 실제 낸 돈은 95만원이므로 실제 수익률은 5%보다 높다. 이처럼 <strong>표면이율은 액면 기준 이자율</strong>이고, <strong>만기수익률은 실제 매입가격 기준 예상수익률</strong>이다. 채권을 액면가보다 싸게 사면 만기수익률 &gt; 표면이율이 된다.</div>
+
+    <h4>채권투자의 위험</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>위험</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>채무불이행위험</td><td>발행기관 재무상태 악화로 이자·원금 지급 지연 또는 불능 가능성</td></tr>
+          <tr><td>시장위험</td><td>시장금리·신용 변화로 채권 시장가격이 매입가격보다 낮아질 가능성</td></tr>
+          <tr><td>유동성위험</td><td>유통시장이 미발달한 경우 현금화 어려울 가능성</td></tr>
+          <tr><td>구매력감소위험</td><td>인플레이션으로 예상수익률이 축소되어 실질 가치가 감소할 가능성</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li><strong>채무불이행위험</strong> : 회사채를 발행한 기업이 경영난으로 법정관리를 신청하면 약속된 이자와 원금을 제때 받지 못할 수 있다.</li>
+      <li><strong>시장위험</strong> : 연 5% 이자를 주는 채권을 100만원에 샀는데 시중금리가 10%로 오르면 채권가격이 약 95.5만원으로 떨어진다. 만기까지 보유하면 약속된 원금과 이자를 받을 수 있지만, 중간에 팔아야 하는 상황이라면 손실이 생긴다.</li>
+      <li><strong>유동성위험</strong> : 국고채처럼 거래가 활발한 채권은 언제든 팔 수 있다. 그러나 소규모 지방 공기업이 발행한 채권은 사려는 사람이 별로 없어, 급하게 현금이 필요할 때 팔지 못하거나 헐값에 팔아야 할 수 있다.</li>
+      <li><strong>구매력감소위험</strong> : 인플레이션으로 인해 채권의 예상수익률이 축소되어 실질적인 구매력이 감소할 가능성. 연 3% 이자를 받는 채권을 샀는데 그해 물가가 5% 올랐다면, 통장 숫자는 늘었지만 실제로 살 수 있는 물건의 양은 오히려 줄어든 것이다. 작년에 1만원이던 장바구니가 올해 1만500원이 됐는데 이자로 300원만 받은 셈이다.</li>
+    </ul>
+
+    <h4 id="s1-5b" class="anchor-target">② 옵션</h4>
+    <p><strong>옵션</strong> : 특정 기초 상품을 미래의 특정 시점 혹은 그 이전에 특정 가격에 사거나 팔 수 있는 <strong>권리</strong>. 핵심은 <strong>의무가 아닌 권리</strong>라는 점이다.</p>
+    <ul>
+      <li>매수자 : 프리미엄을 지불하고 권리 매입. 유리하면 행사, 불리하면 포기 가능</li>
+      <li>매도자 : 프리미엄을 받는 대신 매수자가 권리 행사 시 반드시 이행해야 할 의무</li>
+    </ul>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>종류</th><th>내용</th><th>언제 유리한가</th></tr></thead>
+        <tbody>
+          <tr><td>콜옵션(Call Option)</td><td>기초자산을 사전에 정한 가격으로 <strong>매수</strong>할 수 있는 권리</td><td>가격이 오를 것 같을 때</td></tr>
+          <tr><td>풋옵션(Put Option)</td><td>기초자산을 사전에 정한 가격으로 <strong>매도</strong>할 수 있는 권리</td><td>가격이 내릴 것 같을 때</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example"><strong>콜옵션 예시</strong> : 현재 주가 3만원, 행사가격 3만원짜리 콜옵션을 샀다. 3개월 후 주가가 3만5천원이면 권리를 행사해 3만원에 사서 이익을 본다. 주가가 2만5천원이면 권리를 포기하면 된다. 손실은 처음에 낸 프리미엄으로 한정된다.</div>
+    <div class="quote-box quote-example"><strong>풋옵션 예시</strong> : 같은 상황에서 풋옵션을 샀다. 3개월 후 주가가 2만5천원으로 내리면 권리를 행사해 시장보다 비싼 3만원에 팔 수 있다. 주가가 오히려 오르면 권리를 포기하면 된다. 풋옵션은 주가 하락을 대비한 보험처럼 활용된다.</div>
+
+    <h4>옵션 관련 용어</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>용어</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>프리미엄</td><td>권리를 사기 위해 매수자가 매도자에게 지급하는 금액(= 옵션가격)</td></tr>
+          <tr><td>행사가격</td><td>사전에 정한 기초자산의 거래기준가격</td></tr>
+          <tr><td>기초자산</td><td>옵션계약에서 사고 팔기로 한 대상물 (주식, 상품 등)</td></tr>
+          <tr><td>만기일</td><td>권리를 행사할 수 있도록 정해진 날 또는 기간</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>옵션가치</h4>
+    <div class="info-box">옵션가치 = 내재가치 + 시간가치</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>구분</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>내재가치</td><td>지금 바로 행사했을 때 즉각 실현되는 이익 (행사가격과 시장가격의 차이)</td></tr>
+          <tr><td>시간가치</td><td>만기까지 기초자산 가치가 더 유리하게 움직일 가능성에 대한 가치</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box">행사가격 3만원 콜옵션, 현재 주가 3만2천원이라면 — 내재가치 = 2,000원(지금 행사하면 생기는 이익). 옵션 프리미엄이 2,500원이라면 시간가치 = 500원(만기까지 더 오를 가능성). 만기가 가까워질수록 시간가치는 0에 수렴한다.</div>
+
+    <h4>내재가치 상태 구분 (ITM / ATM / OTM)</h4>
+    <p>이 세 용어는 지금 행사하면 이익이 있는지를 구분하는 말이다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>상태</th><th>영문</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>내가격</td><td>ITM (In the Money)</td><td>지금 행사하면 즉각 이익</td></tr>
+          <tr><td>등가격</td><td>ATM (At the Money)</td><td>현재 가격 = 행사가격. 내재가치 없음</td></tr>
+          <tr><td>외가격</td><td>OTM (Out of the Money)</td><td>지금 행사하면 손해. 포기하는 게 나음</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li>콜옵션 : 시장가격 &gt; 행사가격 → ITM / 시장가격 = 행사가격 → ATM / 시장가격 &lt; 행사가격 → OTM</li>
+      <li>풋옵션 : 시장가격 &lt; 행사가격 → ITM / 시장가격 = 행사가격 → ATM / 시장가격 &gt; 행사가격 → OTM</li>
+    </ul>
+    <div class="quote-box">행사가격 3만원 기준 — 주가 3만5천원이면 콜옵션은 ITM(사면 이익), 풋옵션은 OTM(팔면 손해). 주가 2만5천원이면 콜옵션은 OTM(사면 손해), 풋옵션은 ITM(팔면 이익).</div>
+
+    <h4 id="s1-5c" class="anchor-target">③ 투자대안 가치평가</h4>
+    <p><strong>자본예산</strong> : 투자 의사결정을 위해 소요 비용과 획득 가능한 수익을 비교하여 투자안의 타당성을 재무적 관점에서 판단하는 방법. 주로 대규모 고정자산 투자처럼 투자효과가 장기에 걸쳐 나타나는 투자 계획 평가에 활용.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>방법</th><th>공식·기준</th><th>장점</th><th>단점</th></tr></thead>
+        <tbody>
+          <tr><td>회수기간법</td><td>투자액 ÷ 연간평균회수금액. 회수기간 짧을수록 선택</td><td>간단, 이해 쉬움</td><td>회수기간 이후 현금흐름 무시, 화폐 시간가치 무시, 기준기간 선정 자의적</td></tr>
+          <tr><td>순현재가치법(NPV, Net Present Value)</td><td>미래 현금흐름을 할인율로 할인한 현재가치 합 − 투자액. 독립적 투자안은 NPV &gt; 0이면 선택, 상호배타적 투자안은 NPV가 가장 큰 대안을 선택</td><td>화폐 시간가치 고려, 전체 현금흐름 반영</td><td>적절한 할인율 선정 어려움, 투자규모 다른 대안 비교 곤란</td></tr>
+          <tr><td>내부수익률법(IRR, Internal Rate of Return)</td><td>NPV = 0이 되는 할인율 도출. IRR &gt; 자본비용이면 투자</td><td>화폐 시간가치 고려, 전체 현금흐름 반영</td><td>계산 복잡, 복수의 IRR 존재 가능, IRR로 재투자 가정</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="info-box">세 방법 중 <strong>순현재가치법(NPV)</strong>이 가장 우수한 방법으로 평가됨.</div>
+    <div class="quote-box">카페 창업에 3,000만원을 투자한다고 하자. 회수기간법으로 보면 "매년 1,000만원 회수 → 3년 만에 본전"으로 간단히 판단할 수 있다. 그러나 4년차에 대규모 수익이 생겨도 회수기간법은 이를 무시한다. NPV법은 미래 현금흐름을 현재가치로 환산해 합산하므로 더 정교하지만, 적절한 할인율을 정하는 것이 관건이다.</div>
+
+    <hr class="section-divider">
+
+    <!-- 2) 인적자원 -->
+    <h2 id="s2" class="anchor-target">2) 인적자원</h2>
+
+    <h3 id="s2-1" class="anchor-target">(1) 인사·조직 전략</h3>
+
+    <h4 id="s2-1a" class="anchor-target">① 인사기획</h4>
+    <h4>인사전략 수립</h4>
+    <ul>
+      <li>대내외 환경 및 전사 전략 분석에 기반한 인사전략 방향 설정</li>
+      <li>단기·중장기 인사전략 : 전사 전략 방향에 부합하는 인력 운영·평가·보상·육성·조직 활성화·노사 관계 및 조직 내 인간관계 전략 등</li>
+      <li>인사전략 과제에 대한 실천계획 및 핵심성과지표(KPI, Key Performance Indicator) 개발 필요</li>
+    </ul>
+    <h4>인력 운영 계획</h4>
+    <ul>
+      <li>사업 전망과 노동시장에 대한 경영진·전문가·실무 부서의 분석에 기반한 인력 수요와 공급 예측</li>
+      <li>조직 손익과 인건비 검토, 사업계획·직무분석 등을 종합적으로 고려하여 인적자원의 양(인원)과 질(역량)에 대한 적정성 판단</li>
+      <li>인력 운영 계획 시 고려 요소 : 인력 감소, 자동화, 아웃소싱, 조직개편, 이동, 노사 협약 등</li>
+    </ul>
+    <div class="quote-box quote-example">신제품 출시로 고객 상담 업무가 늘어날 것으로 예상되면, 기업은 상담 인력이 몇 명 더 필요한지 예측하고 기존 직원 재배치·신규 채용·아웃소싱 중 어떤 방식이 적절한지 검토한다. 이것이 인력 운영 계획이다.</div>
+    <h4>인력 운영 효율성 분석 관점</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>관점</th><th>주요 지표</th></tr></thead>
+        <tbody>
+          <tr><td>수익 관점</td><td>매출액 대비 인건비, 인당 영업이익, 인당 부가가치 등</td></tr>
+          <tr><td>비용 관점</td><td>노동분배율, 인적자원 투자수익률 등</td></tr>
+          <tr><td>운영 관점</td><td>인건비 예산, 경쟁사 현황, 과거 추이 등</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 id="s2-1b" class="anchor-target">② 직무분석</h4>
+    <p>특정 목표의 달성을 위한 과업들의 집합체인 직무를 업무 성격이나 조직 편제 등에 따라 분석하여 인력 운영의 효과성과 효율성 제고에 활용.</p>
+    <ul>
+      <li>직무분석 절차 : 직무 정보를 수집하여 수행 업무와 수행 요건 분석</li>
+      <li>직무분석 방법 : 설문, 면접, 관찰, 기록, 일지 검토 등</li>
+      <li>직무분석 결과물 : <strong>직무기술서</strong> 및 <strong>직무명세서</strong> — 직무명, 코드, 직무 목적, 주요 업무, 난이도, 보고 및 의사결정 체계, 자격 요건 및 필요 역량(지식, 기술, 태도) 등 포함</li>
+    </ul>
+    <h4>직무평가</h4>
+    <p>여러 직무의 상대적 가치를 필요 역량·노력·책임·작업환경 등에 따라 평가.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>방법</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>서열법</td><td>직무 간의 상대적 순위를 비교하여 판정</td></tr>
+          <tr><td>분류법</td><td>비슷한 직무끼리 묶어 등급 판정</td></tr>
+          <tr><td>점수법</td><td>직무평가 요소별로 점수를 배정하여 산정</td></tr>
+          <tr><td>비교법</td><td>기준 직무와 대상 직무 비교</td></tr>
+          <tr><td>시장임금조사법</td><td>유사한 직무에 대한 시장의 사례 참고</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>직무평가 결과를 종합하여 보상·배치·인사평가·경력개발 등 인적자원관리와 개발을 위한 근거로 활용.</p>
+    <div class="quote-box quote-example">"데이터 분석가가 실제로 어떤 일을 하고 어떤 역량이 필요한지" 정리하는 것은 직무분석이고, 데이터 분석가 직무가 다른 직무에 비해 조직에서 얼마나 중요한지 서열·점수 등으로 따지는 것은 직무평가다.</div>
+
+    <h4 id="s2-1c" class="anchor-target">③ 성과관리</h4>
+    <h4>목표관리(MBO, Management By Objectives)</h4>
+    <p>MBO 체계를 활용하여 경영전략에 부합하는 사업부·부서·개인별 목표를 수립하고 이에 기반한 객관적 성과관리 실행. 목표 설정 시 <strong>SMART</strong> 기준 적용.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>기준</th><th>영문</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>구체성</td><td>Specific</td><td>목표가 구체적으로 정의되어 있는가</td></tr>
+          <tr><td>측정 가능성</td><td>Measurable</td><td>목표 달성 여부를 측정할 수 있는가</td></tr>
+          <tr><td>달성 가능성</td><td>Attainable</td><td>현실적으로 달성 가능한가</td></tr>
+          <tr><td>적절성</td><td>Relevant</td><td>조직 전략과 연계되어 있는가</td></tr>
+          <tr><td>기한</td><td>Time-bound</td><td>달성 기한이 설정되어 있는가</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>조직 목표와 개인 목표의 연계, 지속적인 과정 관리 필요</p>
+    <div class="quote-box quote-example">"매출을 늘린다"는 목표는 SMART하지 않다. "올해 3분기까지 신규 고객을 전년 대비 20% 늘린다"처럼 구체적이고(S), 측정 가능하며(M), 달성 가능하고(A), 영업 전략과 연계되며(R), 기한이 있어야(T) SMART 목표다.</div>
+
+    <h4>균형성과표(BSC, Balanced Scorecard)</h4>
+    <p>조직의 성과를 균형 있게 관리하고 지속적으로 향상시키기 위한 4가지 핵심 성과 요소로 구분 — 재무적 성과, 업무 프로세스, 고객, 구성원의 학습과 성장.</p>
+    <p>재무적 성과의 단기적 실현 측면 외에 장기적 발전의 초석이 되는 조직의 업무 프로세스·고객·구성원의 학습과 성장까지 종합적으로 평가 및 관리 필요</p>
+    <div class="quote-box quote-example">고객센터 성과를 볼 때 매출만 보면 재무적 성과만 보는 것이다. 고객 만족도는 고객 관점, 상담 처리 시간은 업무 프로세스 관점, 상담원의 교육 이수율은 학습과 성장 관점에서 볼 수 있다. BSC는 이렇게 여러 관점을 함께 보아 조직 성과를 균형 있게 관리하는 방식이다.</div>
+
+    <h4>핵심성과지표(KPI, Key Performance Indicator)</h4>
+    <p>사업부·부서·개인별로 달성하려는 성과목표가 얼마나 실현되었는지를 측정하기 위해 설정하는 핵심 지표. 성과의 구체적 항목, 측정 단위, 달성 기준 등 포함.</p>
+    <p>MBO 체계에서 BSC의 영역별로 주요성공요인(CSF, Critical Success Factor)을 도출한 후 각 CSF에 대해 세부적인 KPI를 설정하여 성과를 관리하는 체계적 접근에 활용 가능.</p>
+    <div class="info-box">MBO, BSC, CSF, KPI는 모두 조직의 전략과 목표를 성과관리 지표로 연결하기 위해 활용될 수 있다.</div>
+
+    <h4>목표와 핵심결과(OKR, Objectives and Key Results)</h4>
+    <p>급변하는 환경과 고객 니즈에 적시적으로 대응해야 하는 현대 경영환경에서의 대안적 성과관리 방법. 상대적으로 경직된 KPI와 달리 목표 및 성과 기간 설정의 유연성, 달성 기준의 도전적 확장 가능성, 성과 창출 지원을 위한 과정 관리와 피드백 강화 등의 특징을 가짐.</p>
+    <div class="quote-box quote-example"><strong>KPI vs OKR 예시</strong> : KPI는 "올해 고객 만족도 90점 이상"처럼 달성 기준이 명확한 지표다. OKR은 "고객 경험을 업계 최고 수준으로 개선한다"는 도전적 목표를 세우고, "재구매율 20% 향상", "불만 응답 시간 30% 단축" 같은 핵심결과로 확인하는 방식이다.</div>
+
+    <hr class="section-divider">
+
+    <h3 id="s2-2" class="anchor-target">(2) 인적자원관리</h3>
+
+    <h4 id="s2-2a" class="anchor-target">① 채용과 배치</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>단계</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>채용 계획</td><td>조직 전략·사업계획·인력 수급 계획·조직 내 인력 분석을 토대로 채용 규모·분야·고용 형태·시기 등 계획 수립</td></tr>
+          <tr><td>인재 모집</td><td>채용 방법(내부 이동 vs 외부 충원), 채용 단위(회사 중심 vs 직무 중심), 채용 대상(신입 vs 경력, 정규직 vs 계약직), 수행직무·필요 역량·근무 조건 등 제시</td></tr>
+          <tr><td>채용 진행</td><td>사전에 수립된 기준에 따라 서류 전형·시험·인·적성 검사·면접·건강 진단 등 전형 시행 및 최적의 채용 예정자 선발</td></tr>
+          <tr><td>채용 결과 정리</td><td>결과 공지, 채용 예정자 관리, 고용 계약 체결, 온보딩(Onboarding) 절차 진행, 채용 결과 분석 등</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>온보딩(Onboarding)</strong> : 신규 입사자가 조직에 정착할 수 있도록 지원하는 것. 오리엔테이션·입문 교육·조직사회화 프로그램·업무 및 부서 배치 등 포함.</p>
+    <h4>배치</h4>
+    <ul>
+      <li>배치 계획 : 사업 목표·부서 기능·직무분석 등을 고려한 조직 내 인력 소요 파악 및 보유 인력과 필요 인력 분석을 통한 과부족 산정</li>
+      <li>배치 진행 : 이동·육성·승진·퇴직 등을 고려한 조직 내부 인력 조정 및 신규 채용자 배치를 통한 외부 인력 충원. 상황에 따라 다운사이징(downsizing), 아웃소싱, 임시직 활용 등 추가 대안 검토</li>
+    </ul>
+
+    <h4 id="s2-2b" class="anchor-target">② 평가</h4>
+    <ul>
+      <li>조직의 목표 달성 및 개인의 직무 수행과 성장을 지원하기 위해 성과와 역량에 대한 효과적이고 공정한 인사 평가 제도 설계 필요</li>
+      <li>평가 계획 : 평가의 목적·방향·방법·대상·준거·기준·절차·일정·결과 활용 방안 등의 계획 및 평가 제도와 계획에 대한 평가자·피평가자 공유와 교육</li>
+    </ul>
+    <h4>평가 방법</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>방법</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>서열법</td><td>평가 결과에 따라 피평가자의 순위 평정</td></tr>
+          <tr><td>강제할당법</td><td>사전에 설정한 등급 또는 범위별 비율에 따라 피평가자를 할당하여 고과 부여</td></tr>
+          <tr><td>서술법</td><td>피평가자의 구체적 행위나 사건을 기술하여 평정</td></tr>
+          <tr><td>행태기준평정법(BARS, Behaviorally Anchored Rating Scale)</td><td>피평가자의 구체적인 행동을 사전에 설정된 유형과 등급으로 평정</td></tr>
+          <tr><td>행태관찰척도법(BOS, Behavioral Observation Scale)</td><td>피평가자의 행동에 대해 정해진 척도에 따라 점수 부여</td></tr>
+          <tr><td>평가센터법(Assessment Center)</td><td>피평가자 집단의 다양한 활동들을 복수의 평가자가 관찰 및 평가. 집중적이고 전문적인 평가 가능</td></tr>
+          <tr><td>다면평가법</td><td>피평가자에 대한 상사·동료·부하 등 다수의 평가 종합</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example"><strong>BARS vs BOS 예시</strong> : BARS는 "고객 불만이 발생하면 즉시 사과하고 대안을 제시한다"처럼 행동 유형을 미리 정해두고 그 수준에 따라 평가하는 방식이다. BOS는 그런 행동이 실제로 얼마나 자주 나타나는지를 관찰해 점수화하는 방식이다.</div>
+    <h4>평가 절차</h4>
+    <p>평가 계획에 따른 평가 시행 → 대상별 결과 통보 → 이의 수렴과 오류 보정 등을 통한 결과 확정 → 평가 결과 수용과 향상 방안 논의 등을 위한 피드백 제공</p>
+    <h4>평가 결과 활용</h4>
+    <ul>
+      <li>평가 결과에 연동하는 처우와 보상 및 역량 개발 제도 설계 — 금전 및 비금전적 보상, 이동 및 승진, 교육 및 경력개발 기회 등에 차등 부여</li>
+      <li>평가 결과에 연동하는 처우와 보상 및 역량 개발 제도 설계
+        <ul><li>관련 제도 : 금전 및 비금전적 보상, 이동 및 승진, 교육 및 경력개발 기회 등에 차등을 부여하는 다양한 제도</li></ul>
+      </li>
+      <li>그 외 활용 : 평가 결과와 조직 및 개인 성과와의 관계 분석, 평가 결과 수용성 및 평가자 신뢰도 분석, 평가 오류 분석 및 개선방안 마련 등 분석 및 환류 체계 운영</li>
+    </ul>
+
+    <h4 id="s2-2c" class="anchor-target">③ 보상</h4>
+    <p>거시 경제 상황·동종업계 실태·조직의 비즈니스 현황과 지불능력·구성원의 최저생계와 만족 등을 종합적으로 고려한 적정하고 합리적인 임금 수준 설정 필요</p>
+    <h4>임금체계 유형</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>유형</th><th>특징</th></tr></thead>
+        <tbody>
+          <tr><td>연공급</td><td>근속 연수에 따라 임금 결정</td></tr>
+          <tr><td>직무급</td><td>직무의 가치에 따라 임금 결정</td></tr>
+          <tr><td>직능급</td><td>직무 수행 능력에 따라 임금 결정</td></tr>
+          <tr><td>성과급</td><td>개인 및 조직 성과에 연동하여 임금 결정</td></tr>
+          <tr><td>혼합형</td><td>위 유형들을 조합</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">연공급은 10년 근무자가 5년 근무자보다 임금이 높은 방식, 직무급은 같은 연차라도 맡은 직무의 가치에 따라 임금이 달라지는 방식, 성과급은 올해 목표를 120% 달성하면 추가 보상이 지급되는 방식이다.</div>
+
+    <h4>임금 조정 방법</h4>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>방법</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>베이스업(base-up)</td><td>물가나 업계 상황 등을 고려하여 전체적인 임금 기준 상향</td></tr>
+          <tr><td>승급</td><td>연공에 따라 임금 인상</td></tr>
+          <tr><td>승격</td><td>역할과 책임의 확장에 따라 임금 인상</td></tr>
+          <tr><td>성과급</td><td>개인 및 조직 성과 등에 연동</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>임금 관련 업무 : 개인별 임금(연봉) 계약 체결, 급여 지급 및 세금·4대보험·공제·연말정산 등 관리, 급여시스템 운영 및 통계 관리 등</p>
+
+    <h4>복리후생</h4>
+    <ul>
+      <li>근로조건 향상과 우수인재 확보, 구성원 가족 복리 향상 등을 위해 구성원의 요구(needs) 조사를 토대로 경쟁력 있고 공정한 제도 설계 필요</li>
+      <li>법정 복리후생과 법정 외 복리후생 프로그램 선정 및 예산 계획 실시
+        <ul>
+          <li><strong>법정 복리후생</strong> : 4대보험, 유급휴가, 퇴직금 등</li>
+          <li><strong>법정 외 복리후생 프로그램</strong> : 경제, 건강, 자기개발, 생활문화, 근무환경 등</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>제도</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>카페테리아(cafeteria) 복리후생</td><td>정해진 금액 범위 내에서 개인이 원하는 프로그램을 선택할 수 있도록 하여 구성원 만족도와 예산 운영의 효율성을 극대화하는 복리후생 제도</td></tr>
+          <tr><td>종업원지원 프로그램(EAP, Employee Assistance Program)</td><td>구성원 개개인의 니즈 충족을 위해 고충 처리·스트레스 관리·웰니스(wellness)·가족 관계 등과 관련한 개별화된 서비스를 제공하는 복리후생 제도</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example"><strong>카페테리아 복리후생 예시</strong> : 회사가 1인당 50만원의 복지 포인트를 지급하면, 어떤 직원은 헬스장 이용권을 선택하고, 어떤 직원은 자기개발 도서나 강의 수강에 사용하는 방식이다.</div>
+
+    <p>복리후생 관련 업무 : 규정과 매뉴얼에 따른 프로그램 운영, 신청자 심사 및 지급 관리, 만족도·효율성·공정성 등에 대한 분석 및 제도 개선 관리 등</p>
+
+    <h4 id="s2-2d" class="anchor-target">④ 퇴직</h4>
+    <h4>퇴직관리</h4>
+    <ul>
+      <li>직원의 의사에 따른 자발적 퇴직(전직, 사직 등)과 경영상 사유에 따른 비자발적 퇴직(해고, 정년퇴직, 정리해고 등) 관리 계획 설계</li>
+      <li>퇴직 정보 수집 : 퇴직 예정자 파악, 퇴직 상담을 통한 퇴직 사유와 퇴직 후 경로 등 파악</li>
+      <li>퇴직 절차 : 업무 인수인계 점검, 비품 반납 및 전산 정보 차단, 서류 및 법적 필요 사항 확인, 퇴직금 지급 등</li>
+      <li>퇴직 사후관리 : 퇴직 인원과 유형·사유 등에 대한 데이터 분석과 결원 충원 및 퇴직률 관리와 직원 유지를 위한 대책 마련</li>
+    </ul>
+    <div class="quote-box quote-example">퇴직관리는 직원이 조직을 떠나는 과정(인수인계·퇴직금·데이터 분석 등)을 체계적으로 처리하는 것이고, 전직지원은 떠나는 직원이 다음 단계(재취업·창업 등)를 잘 준비할 수 있도록 돕는 것이다.</div>
+    <h4>전직지원(Outplacement)</h4>
+    <ul>
+      <li>퇴직 예정자들이 재취업·창업 등을 통해 지속적으로 경력 목표를 이뤄갈 수 있도록 진단·교육·상담·정보제공·취창업 연계 등의 서비스 설계</li>
+      <li>전직지원 정보 수집 : 퇴직 예정자의 경력·특성·선호·향후 계획 등에 대한 진단</li>
+      <li>전직지원 시행 : 진단 결과 등을 반영한 전직 목표 및 계획 수립 유도, 전직 활동 촉진, 활동 진행 모니터링 및 심리·교육·정보·행정적 지원 등 전직지원 서비스 실행 및 성과관리</li>
+    </ul>
+    <div class="quote-box quote-example">구조조정으로 퇴직 예정자가 생겼을 때, 회사가 이력서 작성 교육·진로 상담·재취업 정보 제공·창업 교육 등을 지원하면 전직지원에 해당한다.</div>
+
+    <hr class="section-divider">
+
+    <h3 id="s2-3" class="anchor-target">(3) 인적자원개발 및 조직개발</h3>
+
+    <h4 id="s2-3a" class="anchor-target">① 교육</h4>
+    <ul>
+      <li>조직 전략과 인재상 및 직무분석을 토대로 필요 역량 규명 및 인재육성 전략 수립</li>
+      <li><strong>전사 교육 기획</strong> : 역량 진단 및 교육 요구 분석, 인재육성 체계 및 연간 교육 계획 수립, 개별 교육과정 기획 등</li>
+      <li><strong>교육 계획에 따른 실행</strong> : 개별 교육과정 개발 및 운영, 외부 교육과정 소싱, 무형식학습 및 자기개발 인프라 구축 등</li>
+      <li><strong>교육 평가</strong> : 교육 실행 모니터링 및 결과 분석, 교육의 현장 실무 전이(transfer) 분석, 경영 성과에 대한 교육의 영향 및 기여 분석, 교육 성과 지표와 대시보드(dashboard) 관리 등</li>
+      <li><strong>시스템 및 데이터 관리</strong> : 맞춤형 교육과 경력개발 지원, 교육과정 개선과 성과관리 방안 마련 등을 위한 시스템 및 데이터 관리</li>
+    </ul>
+
+    <h4 id="s2-3b" class="anchor-target">② 경력개발</h4>
+    <ul>
+      <li>중장기적 경력개발 전략 수립 : 구성원 개인 차원의 성장 니즈와 조직 차원의 관리 니즈를 아우를 수 있어야 함</li>
+      <li>경력개발제도 기획 : 업무 배치, 상담 및 교육, 리더십 개발, 핵심인재관리, 승계계획 등</li>
+    </ul>
+    <p>각종 경력개발 프로그램 : 직무확장·심화·순환, 조기 발탁, 사내공모, 경력상담, 멘토링, 코칭, 리스킬링(reskilling)·업스킬링(upskilling), 해외파견, 핵심인재육성, 이중경력제도(dual ladder system) 등</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>용어</th><th>내용</th></tr></thead>
+        <tbody>
+          <tr><td>리스킬링(reskilling)</td><td>새로운 업무를 수행하기 위한 스킬을 익히는 것</td></tr>
+          <tr><td>업스킬링(upskilling)</td><td>현재 수행하고 있는 업무와 관련된 새로운 스킬을 익히는 것</td></tr>
+          <tr><td>핵심인재육성</td><td>조직의 리더로 성장할 직원들이 역량과 경험을 축적하도록 지원하는 것</td></tr>
+          <tr><td>이중경력제도(dual ladder system)</td><td>연구개발 및 기술 관련 전문직과 관리직 중 선택하여 경력개발 가능하도록 지원하는 제도. 주로 연구개발이나 기술직 직원을 대상으로 함</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="quote-box quote-example">기존 영업 직원이 데이터 분석 직무로 이동하기 위해 Python이나 SQL을 새로 배우는 것은 리스킬링에 가깝다. 이미 영업 업무를 하던 직원이 CRM 시스템이나 AI 영업 도구를 더 깊게 익히는 것은 업스킬링에 가깝다.</div>
+    <p>데이터 관리 : 조직 내 인재풀과 리더십 파이프라인 모니터링, 개인별 프로파일링과 맞춤형 경력개발 지원을 위한 데이터 관리</p>
+
+    <h4 id="s2-3c" class="anchor-target">③ 조직개발</h4>
+    <ul>
+      <li><strong>조직문화 발전 방향 도출</strong> : 조직의 발전사와 환경, 경영 미션과 비전, 구성원의 특성과 니즈 등을 기반으로 조직문화 발전 방향의 개념·내용·이미지 도출</li>
+      <li><strong>조직개발 전략 및 실행 우선순위 설정</strong> : 조직문화에 대한 구성원의 인식을 진단하여 조직이 지향하는 방향과의 차이를 분석하고, 결과를 토대로 설정</li>
+      <li><strong>데이터 관리 및 분석</strong> : 조직행동과 성과의 변화에 대한 측정과 개입의 효과 검증 등</li>
+      <li><strong>지속적 관리</strong> : 조직개발 활동의 성과를 평가하고 조직활성화 현황을 주기적으로 진단하여 바람직한 조직문화의 정착과 발전을 위한 지속적 노력 전개</li>
+    </ul>
+    <div class="quote-box quote-example">교육은 "직무 수행에 필요한 역량을 키우는 것", 경력개발은 "개인이 장기적으로 어떤 방향으로 성장할지 지원하는 것", 조직개발은 "조직 전체의 문화와 성과 수준을 높이기 위한 활동"이다.</div>
+
+    <hr class="section-divider">
+
+    <!-- 핵심 키워드 -->
+    <div id="keywords" class="keyword-section anchor-target">
+      <div class="keyword-section-title">✅ 핵심 키워드</div>
+      <div class="keyword-grid">
+        <div class="keyword-card"><div class="kw-term">재무회계 / 관리회계 / 세무회계</div><div class="kw-desc">외부보고 / 내부관리 / 조세 목적</div></div>
+        <div class="keyword-card"><div class="kw-term">K-IFRS</div><div class="kw-desc">법적으로 강제되는 회계기준</div></div>
+        <div class="keyword-card"><div class="kw-term">분개장·시산표·정산표</div><div class="kw-desc">거래 기록 → 검증 → 결산 정리 흐름</div></div>
+        <div class="keyword-card"><div class="kw-term">재무상태표</div><div class="kw-desc">특정 시점의 자산·부채·자본 (자산 = 부채 + 자본)</div></div>
+        <div class="keyword-card"><div class="kw-term">손익계산서</div><div class="kw-desc">일정 기간의 수익·비용·순이익</div></div>
+        <div class="keyword-card"><div class="kw-term">현금흐름표</div><div class="kw-desc">영업·투자·재무활동의 실제 현금 흐름</div></div>
+        <div class="keyword-card"><div class="kw-term">자본변동표</div><div class="kw-desc">일정 기간의 자본 변동 내역</div></div>
+        <div class="keyword-card"><div class="kw-term">발생주의</div><div class="kw-desc">현금 수수와 무관하게 발생 시점 기준으로 인식</div></div>
+        <div class="keyword-card"><div class="kw-term">수익비용대응</div><div class="kw-desc">수익과 그에 대응하는 비용을 같은 기간에 인식</div></div>
+        <div class="keyword-card"><div class="kw-term">안정성 비율</div><div class="kw-desc">유동비율·당좌비율·부채비율·이자보상비율 — 빚 갚을 능력</div></div>
+        <div class="keyword-card"><div class="kw-term">수익성 비율</div><div class="kw-desc">ROE·ROA·매출액순이익률·ROI — 이익창출능력</div></div>
+        <div class="keyword-card"><div class="kw-term">듀퐁항등식</div><div class="kw-desc">ROE = 매출이익률 × 총자산회전율 × 자기자본승수</div></div>
+        <div class="keyword-card"><div class="kw-term">활동성 비율</div><div class="kw-desc">재고·유형자산·매출채권 회전율 — 자산 활용 효율</div></div>
+        <div class="keyword-card"><div class="kw-term">성장성 비율</div><div class="kw-desc">총자산·자기자본·매출액 증가율 — 전년 대비 성장</div></div>
+        <div class="keyword-card"><div class="kw-term">생산성 비율</div><div class="kw-desc">노동생산성·자본생산성 — 투입 대비 부가가치</div></div>
+        <div class="keyword-card"><div class="kw-term">시장가치 비율</div><div class="kw-desc">EPS·PER·PBR·PCR·PSR — 주가와 재무지표 비교</div></div>
+        <div class="keyword-card"><div class="kw-term">재고자산 단가 결정</div><div class="kw-desc">개별법·선입선출법·후입선출법·평균법</div></div>
+        <div class="keyword-card"><div class="kw-term">감가상각</div><div class="kw-desc">정액법·정률법·생산량비례법·연수합계법</div></div>
+        <div class="keyword-card"><div class="kw-term">채권가격-수익률 역관계</div><div class="kw-desc">금리 오르면 채권가격 하락, 금리 내리면 채권가격 상승</div></div>
+        <div class="keyword-card"><div class="kw-term">화폐의 시간가치</div><div class="kw-desc">현재가치 = 미래가치 ÷ (1 + 이자율)</div></div>
+        <div class="keyword-card"><div class="kw-term">옵션가치</div><div class="kw-desc">내재가치 + 시간가치</div></div>
+        <div class="keyword-card"><div class="kw-term">콜옵션 / 풋옵션(Call/Put Option)</div><div class="kw-desc">매수할 권리 / 매도할 권리</div></div>
+        <div class="keyword-card"><div class="kw-term">투자대안 평가</div><div class="kw-desc">회수기간법·NPV법·IRR법. NPV법이 가장 우수</div></div>
+        <div class="keyword-card"><div class="kw-term">인사전략</div><div class="kw-desc">전사 전략에 부합하는 인력 운영·평가·보상·육성 전략</div></div>
+        <div class="keyword-card"><div class="kw-term">인력 운영 계획</div><div class="kw-desc">인력 수요·공급 예측 및 인원·역량 적정성 판단</div></div>
+        <div class="keyword-card"><div class="kw-term">직무분석</div><div class="kw-desc">직무 수행 업무·요건 분석 → 직무기술서·직무명세서</div></div>
+        <div class="keyword-card"><div class="kw-term">직무평가</div><div class="kw-desc">직무의 상대적 가치를 서열법·분류법·점수법 등으로 평가</div></div>
+        <div class="keyword-card"><div class="kw-term">목표관리(MBO)</div><div class="kw-desc">사업부·부서·개인별 목표 수립 및 객관적 성과관리</div></div>
+        <div class="keyword-card"><div class="kw-term">SMART</div><div class="kw-desc">구체성·측정가능성·달성가능성·적절성·기한 — 목표 설정 기준</div></div>
+        <div class="keyword-card"><div class="kw-term">균형성과표(BSC)</div><div class="kw-desc">재무적 성과·업무 프로세스·고객·학습과 성장 4요소 균형 관리</div></div>
+        <div class="keyword-card"><div class="kw-term">핵심성과지표(KPI)</div><div class="kw-desc">성과목표 실현 정도를 측정하는 핵심 지표</div></div>
+        <div class="keyword-card"><div class="kw-term">주요성공요인(CSF)</div><div class="kw-desc">BSC 영역별로 도출하는 성공의 핵심 요인</div></div>
+        <div class="keyword-card"><div class="kw-term">목표와 핵심결과(OKR)</div><div class="kw-desc">KPI보다 유연하고 도전적인 대안적 성과관리 방법</div></div>
+        <div class="keyword-card"><div class="kw-term">온보딩(Onboarding)</div><div class="kw-desc">신규 입사자의 조직 정착 지원 프로그램</div></div>
+        <div class="keyword-card"><div class="kw-term">임금체계 유형</div><div class="kw-desc">연공급·직무급·직능급·성과급·혼합형</div></div>
+        <div class="keyword-card"><div class="kw-term">베이스업(base-up)</div><div class="kw-desc">전체적인 임금 기준 상향 조정</div></div>
+        <div class="keyword-card"><div class="kw-term">법정 복리후생</div><div class="kw-desc">4대보험·유급휴가·퇴직금 등 법으로 정해진 것</div></div>
+        <div class="keyword-card"><div class="kw-term">카페테리아 복리후생</div><div class="kw-desc">개인이 원하는 프로그램을 선택하는 복리후생 제도</div></div>
+        <div class="keyword-card"><div class="kw-term">종업원지원 프로그램(EAP)</div><div class="kw-desc">고충·스트레스·웰니스 등 개별화된 복리후생 서비스</div></div>
+        <div class="keyword-card"><div class="kw-term">전직지원(Outplacement)</div><div class="kw-desc">퇴직 예정자의 재취업·창업 지원 서비스</div></div>
+        <div class="keyword-card"><div class="kw-term">리스킬링 / 업스킬링</div><div class="kw-desc">새 업무용 스킬 습득 / 현 업무 관련 스킬 향상</div></div>
+        <div class="keyword-card"><div class="kw-term">이중경력제도</div><div class="kw-desc">전문직·관리직 경력경로를 선택할 수 있는 제도</div></div>
+      </div>
+    </div>
+
+  </div><!-- /content-area -->
+
+  <nav class="nav-buttons" style="margin-top:40px; border-top:1px solid var(--border-light); border-bottom:none; padding-top:20px;">
+    <a href="index.html" class="btn btn-home">&#8962; 목차</a>
+    <a href="ch01_s01.html" class="btn">&lsaquo; Section 01</a>
+    <span class="nav-spacer"></span>
+    <a href="ch01_s02_2.html" class="btn btn-primary">Section 02-2 &rsaquo;</a>
+  </nav>
+
+</div><!-- /page-wrap -->
+</body>
+</html>
